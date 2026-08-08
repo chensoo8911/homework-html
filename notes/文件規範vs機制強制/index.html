@@ -1,0 +1,65 @@
+<!DOCTYPE html><html lang="zh-Hant" data-astro-cid-37fxchfa> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="一個給自己用的 UI/UX ＋ AI 學習站"><link rel="icon" href="/uai-wiki-html/favicon.svg" type="image/svg+xml"><title>文件規範 vs 機制強制（SKILL.md 靠遵守，腳本靠內建）｜筆記｜升職消化中</title><!-- 主題初始化：在畫面繪製前決定深淺色，避免閃爍 --><script>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+      })();
+    </script><link rel="stylesheet" href="/uai-wiki-html/_astro/_slug_.3ZshJw83.css">
+<style>.progress[data-astro-cid-mu6cnre2]{position:fixed;inset:0 0 auto;height:4px;z-index:60;background:transparent;pointer-events:none}#progress-bar[data-astro-cid-mu6cnre2]{display:block;height:100%;width:0%;background:var(--accent);transition:width .1s linear}
+.article-grid[data-astro-cid-5eggoaxc]{max-width:68rem;margin:0 auto;padding:0 1.5rem}.reading[data-astro-cid-5eggoaxc]{max-width:var(--font-reading-width);margin:0 auto}.back[data-astro-cid-5eggoaxc]{display:inline-block;margin-bottom:1.5rem;color:var(--muted);text-decoration:none;font-size:.9rem}.back[data-astro-cid-5eggoaxc]:hover{color:var(--accent)}.meta-top[data-astro-cid-5eggoaxc]{display:flex;flex-wrap:wrap;align-items:center;gap:.8rem;margin-bottom:.8rem}.date[data-astro-cid-5eggoaxc]{color:var(--muted);font-size:.88rem}.note-hint[data-astro-cid-5eggoaxc]{color:var(--muted);font-size:.92rem;border-left:2px solid var(--line);padding-left:.9rem;margin:0 0 2rem}.side-toc[data-astro-cid-5eggoaxc]{display:none}@media(min-width:1100px){.article-grid[data-astro-cid-5eggoaxc]{display:grid;grid-template-columns:13rem minmax(0,var(--font-reading-width));gap:4rem;justify-content:center;align-items:start}.reading[data-astro-cid-5eggoaxc]{margin:0}.side-toc[data-astro-cid-5eggoaxc]{display:block;position:sticky;top:6rem;padding-top:4.5rem}}.side-toc-title[data-astro-cid-5eggoaxc]{font-size:.78rem;letter-spacing:.1em;color:var(--muted);margin:0 0 .8rem}.side-toc[data-astro-cid-5eggoaxc] ol[data-astro-cid-5eggoaxc]{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}.side-toc[data-astro-cid-5eggoaxc] a[data-astro-cid-5eggoaxc]{display:block;padding:.45rem .9rem;margin-left:-2px;border-left:2px solid transparent;color:var(--muted);text-decoration:none;font-size:.88rem;line-height:1.45}.side-toc[data-astro-cid-5eggoaxc] a[data-astro-cid-5eggoaxc]:hover{color:var(--ink)}.side-toc[data-astro-cid-5eggoaxc] a[data-astro-cid-5eggoaxc].on{color:var(--ink);font-weight:600;border-left-color:var(--accent)}.prose[data-astro-cid-5eggoaxc]{margin-top:2.5rem}.prose[data-astro-cid-5eggoaxc] h2{scroll-margin-top:5rem;padding-top:1.5em;border-top:1px solid var(--line)}.prose[data-astro-cid-5eggoaxc] h2:first-child{border-top:none;padding-top:0;margin-top:0}.prose[data-astro-cid-5eggoaxc] strong{color:var(--ink);font-weight:700}.prose[data-astro-cid-5eggoaxc] img{max-width:100%;height:auto;border-radius:var(--radius)}.prose[data-astro-cid-5eggoaxc] blockquote{margin:1.8em 0;padding:1em 1.4em;border-left:3px solid var(--accent);color:var(--ink-soft);background:var(--bg-card);border-radius:0 8px 8px 0}.prose[data-astro-cid-5eggoaxc] blockquote p:last-child{margin-bottom:0}.prose[data-astro-cid-5eggoaxc] code{background:var(--bg-card);padding:.1em .4em;border-radius:5px;font-size:.9em}.prose[data-astro-cid-5eggoaxc] pre{padding:1rem 1.2rem;border-radius:var(--radius);overflow-x:auto;border:1px solid var(--line)}.prose[data-astro-cid-5eggoaxc] hr{border:none;border-top:1px solid var(--line);margin:3em 0}.prose[data-astro-cid-5eggoaxc] ul,.prose[data-astro-cid-5eggoaxc] ol{padding-left:1.4rem;margin:0 0 1.5em}.prose[data-astro-cid-5eggoaxc] li{margin:.6em 0}.prose[data-astro-cid-5eggoaxc] table{width:100%;border-collapse:collapse;margin:1.8em 0;font-size:.95rem;line-height:1.7;display:block;overflow-x:auto}.prose[data-astro-cid-5eggoaxc] th,.prose[data-astro-cid-5eggoaxc] td{padding:.7em 1em;text-align:left;border-bottom:1px solid var(--line)}.prose[data-astro-cid-5eggoaxc] th{font-size:.82rem;letter-spacing:.06em;color:var(--muted);font-weight:600;border-bottom-width:2px}.prose[data-astro-cid-5eggoaxc] tbody tr:nth-child(2n){background:var(--bg-card)}.prose[data-astro-cid-5eggoaxc] .dead-link{color:var(--muted);border-bottom:1px dotted var(--muted);cursor:help}.origin[data-astro-cid-5eggoaxc]{margin-top:4rem;padding-top:1.5rem;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}.origin[data-astro-cid-5eggoaxc] p[data-astro-cid-5eggoaxc]{margin:0 0 .4em}.origin[data-astro-cid-5eggoaxc] code[data-astro-cid-5eggoaxc]{background:var(--bg-card);padding:.15em .5em;border-radius:5px;font-size:.95em}
+</style></head> <body data-astro-cid-37fxchfa> <header class="site-header" data-astro-cid-3ef6ksr2> <div class="wrap bar" data-astro-cid-3ef6ksr2> <a href="/uai-wiki-html/" class="brand" data-astro-cid-3ef6ksr2> <span class="brand-mark" data-astro-cid-3ef6ksr2>升</span> <span class="brand-text" data-astro-cid-3ef6ksr2>升職消化中</span> </a> <nav class="nav" aria-label="主導覽" data-astro-cid-3ef6ksr2> <a href="/uai-wiki-html/articles" class="nav-item" data-astro-cid-3ef6ksr2> <span class="nav-text" data-astro-cid-3ef6ksr2>讀</span> </a><a href="/uai-wiki-html/glossary" class="nav-item on" aria-current="page" data-astro-cid-3ef6ksr2> <span class="nav-text" data-astro-cid-3ef6ksr2>查</span> </a><a href="/uai-wiki-html/resources" class="nav-item" data-astro-cid-3ef6ksr2> <span class="nav-text" data-astro-cid-3ef6ksr2>找</span> </a> <button id="theme-toggle" class="theme-toggle" type="button" aria-label="切換深淺色" data-astro-cid-x3pjskd3> <span class="i-sun" data-astro-cid-x3pjskd3>☀︎</span><span class="i-moon" data-astro-cid-x3pjskd3>☾</span> </button>  <script type="module">document.getElementById("theme-toggle")?.addEventListener("click",()=>{const t=document.documentElement,e=t.getAttribute("data-theme")==="dark"?"light":"dark";t.setAttribute("data-theme",e);try{localStorage.setItem("theme",e)}catch{}});</script> </nav> </div> </header>  <main data-astro-cid-37fxchfa>  <div class="progress" aria-hidden="true" data-astro-cid-mu6cnre2><span id="progress-bar" data-astro-cid-mu6cnre2></span></div>  <script type="module">const n=document.getElementById("progress-bar");function t(){const e=document.documentElement,o=e.scrollTop/(e.scrollHeight-e.clientHeight||1);n&&(n.style.width=Math.min(100,Math.max(0,o*100))+"%")}document.addEventListener("scroll",t,{passive:!0});window.addEventListener("resize",t);t();</script> <div class="article-grid" data-astro-cid-5eggoaxc> <nav class="side-toc" aria-label="章節導覽" data-astro-cid-5eggoaxc> <p class="side-toc-title" data-astro-cid-5eggoaxc>這篇的段落</p> <ol data-astro-cid-5eggoaxc><li data-astro-cid-5eggoaxc><a href="#兩種做法的差異" data-toc-link="兩種做法的差異" data-astro-cid-5eggoaxc>兩種做法的差異</a></li><li data-astro-cid-5eggoaxc><a href="#為什麼機制強制比較可靠" data-toc-link="為什麼機制強制比較可靠" data-astro-cid-5eggoaxc>為什麼機制強制比較可靠</a></li><li data-astro-cid-5eggoaxc><a href="#生活化比喻" data-toc-link="生活化比喻" data-astro-cid-5eggoaxc>生活化比喻</a></li><li data-astro-cid-5eggoaxc><a href="#實務上怎麼用" data-toc-link="實務上怎麼用" data-astro-cid-5eggoaxc>實務上怎麼用</a></li></ol> </nav> <article class="reading" data-astro-cid-5eggoaxc> <a href="/uai-wiki-html/notes" class="back" data-astro-cid-5eggoaxc>← 全部筆記</a> <div class="meta-top" data-astro-cid-5eggoaxc> <span class="tag" data-astro-cid-5eggoaxc>開發流程概念</span> <span class="date" data-astro-cid-5eggoaxc>記於 2026-07-16</span> </div> <h1 data-astro-cid-5eggoaxc>文件規範 vs 機制強制（SKILL.md 靠遵守，腳本靠內建）</h1>  <div class="prose" data-astro-cid-5eggoaxc> <p>同一件「要檢查」的事，可以放在兩個不同的地方，可靠度差很多：</p>
+<blockquote>
+<p><strong>SKILL.md 是『說明書寫了要檢查』，release.sh 是『機器本身內建了檢查』——前者靠人／AI 遵守，後者靠機制強制。</strong></p>
+</blockquote>
+<h2 id="兩種做法的差異">兩種做法的差異</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>寫進 SKILL.md（文件規範）</th><th>寫進 release.sh（機制強制）</th></tr></thead><tbody><tr><td>檢查邏輯放哪</td><td>給 Claude 讀的操作說明書</td><td>實際會被執行的腳本本體</td></tr><tr><td>靠什麼生效</td><td>靠 Claude 每次都讀到、都照做</td><td>只要腳本被執行，檢查就一定發生</td></tr><tr><td>會不會被跳過</td><td>會——如果 Claude 沒讀到那段、或漏看跳過，檢查就沒發生</td><td>不會——檢查寫死在執行路徑上，繞不過去</td></tr><tr><td>可靠度</td><td>較低（靠「記性 / 靠遵守」）</td><td>較高（靠「機制」）</td></tr></tbody></table>
+<h2 id="為什麼機制強制比較可靠">為什麼機制強制比較可靠</h2>
+<p>文件規範是「死的規則靠人/AI 照做」——說明書寫得再清楚，執行的人（或 AI）沒翻到那一頁，規則就形同不存在。
+機制強制是「規則內建在執行路徑上」——你不需要「記得」去檢查，因為只要你按下執行鍵，檢查就自動跑，想跳過都跳不過。</p>
+<h2 id="生活化比喻">生活化比喻</h2>
+<ul>
+<li><strong>SKILL.md ＝ 印刷 SOP 手冊</strong>：紙本規範寫著「印前要核對色票、檢查缺字」，但全靠師傅自己記得翻開來對——師傅忙起來漏看一頁，這關就沒人把關。</li>
+<li><strong>release.sh ＝ 印刷機的自動感測器</strong>：機器本身裝了感應器，紙張沒對齊、油墨濃度不對，機器直接停機警告——不管師傅有沒有想到，機器自己就會擋下來。</li>
+</ul>
+<p>同樣一件「發版前要檢查」的事，寫進 SOP 手冊是「靠人記得看」，做成機器內建感測則是「不用記得，機制自己會抓」。</p>
+<h2 id="實務上怎麼用">實務上怎麼用</h2>
+<p>不是「文件沒用、只做腳本就好」——兩者分工：</p>
+<ul>
+<li><strong>SKILL.md</strong>：講清楚「為什麼要檢查、檢查的判斷邏輯、遇到例外怎麼處理」，給人／AI 理解脈絡用。</li>
+<li><strong>腳本本體（如 release.sh）</strong>：把「一定要發生、沒有模糊空間」的檢查動作寫進去，確保就算沒人看 SKILL.md，該擋的還是會被擋下來。</li>
+</ul>
+<p><strong>原則</strong>：重要到「漏掉會出事」的檢查，盡量往下沉到機制（腳本）裡；只是「建議 / 原則性」的判斷，留在文件說明即可。</p>
+<hr>
+<p><em>記錄日期：2026-07-16</em></p> </div> <!-- 筆記沒有外部出處，改標「這篇的本體在哪」——要改內容是去改學習庫，不是改網站 --> <footer class="origin" data-astro-cid-5eggoaxc> <p data-astro-cid-5eggoaxc>這是從學習庫同步過來的個人筆記。</p> <p class="path" data-astro-cid-5eggoaxc><code data-astro-cid-5eggoaxc>1_UIAI學習庫/知識庫/開發流程概念/文件規範vs機制強制.md</code></p> </footer> </article> </div> <script type="module">const n=document.querySelectorAll("[data-toc-link]");if(n.length){const o=new Map;n.forEach(e=>{const t=document.getElementById(e.getAttribute("data-toc-link"));t&&o.set(t,e)});const c=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&(n.forEach(s=>s.classList.remove("on")),o.get(t.target)?.classList.add("on"))})},{rootMargin:"-10% 0px -80% 0px"});o.forEach((e,t)=>c.observe(t))}</script>   </main> <footer class="site-footer" data-astro-cid-37fxchfa> <div class="wrap" data-astro-cid-37fxchfa> <p data-astro-cid-37fxchfa>升職消化中 · 個人 UI/UX ＋ AI 學習庫。內容為學習消化用途，出處標於各文章底部。</p> </div> </footer>  </body> </html>

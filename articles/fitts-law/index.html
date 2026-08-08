@@ -1,0 +1,134 @@
+<!DOCTYPE html><html lang="zh-Hant" data-astro-cid-37fxchfa> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="一個給自己用的 UI/UX ＋ AI 學習站"><link rel="icon" href="/uai-wiki-html/favicon.svg" type="image/svg+xml"><title>Fitts 定律：東西越大越近，就越好點｜升職消化中</title><!-- 主題初始化：在畫面繪製前決定深淺色，避免閃爍 --><script>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+      })();
+    </script><link rel="stylesheet" href="/uai-wiki-html/_astro/_slug_.3ZshJw83.css">
+<style>.progress[data-astro-cid-mu6cnre2]{position:fixed;inset:0 0 auto;height:4px;z-index:60;background:transparent;pointer-events:none}#progress-bar[data-astro-cid-mu6cnre2]{display:block;height:100%;width:0%;background:var(--accent);transition:width .1s linear}
+</style>
+<link rel="stylesheet" href="/uai-wiki-html/_astro/_slug_.DmvNEfVi.css"></head> <body data-astro-cid-37fxchfa> <header class="site-header" data-astro-cid-3ef6ksr2> <div class="wrap bar" data-astro-cid-3ef6ksr2> <a href="/uai-wiki-html/" class="brand" data-astro-cid-3ef6ksr2> <span class="brand-mark" data-astro-cid-3ef6ksr2>升</span> <span class="brand-text" data-astro-cid-3ef6ksr2>升職消化中</span> </a> <nav class="nav" aria-label="主導覽" data-astro-cid-3ef6ksr2> <a href="/uai-wiki-html/articles" class="nav-item on" aria-current="page" data-astro-cid-3ef6ksr2> <span class="nav-text" data-astro-cid-3ef6ksr2>讀</span> </a><a href="/uai-wiki-html/glossary" class="nav-item" data-astro-cid-3ef6ksr2> <span class="nav-text" data-astro-cid-3ef6ksr2>查</span> </a><a href="/uai-wiki-html/resources" class="nav-item" data-astro-cid-3ef6ksr2> <span class="nav-text" data-astro-cid-3ef6ksr2>找</span> </a> <button id="theme-toggle" class="theme-toggle" type="button" aria-label="切換深淺色" data-astro-cid-x3pjskd3> <span class="i-sun" data-astro-cid-x3pjskd3>☀︎</span><span class="i-moon" data-astro-cid-x3pjskd3>☾</span> </button>  <script type="module">document.getElementById("theme-toggle")?.addEventListener("click",()=>{const t=document.documentElement,e=t.getAttribute("data-theme")==="dark"?"light":"dark";t.setAttribute("data-theme",e);try{localStorage.setItem("theme",e)}catch{}});</script> </nav> </div> </header>  <main data-astro-cid-37fxchfa>  <div class="progress" aria-hidden="true" data-astro-cid-mu6cnre2><span id="progress-bar" data-astro-cid-mu6cnre2></span></div>  <script type="module">const n=document.getElementById("progress-bar");function t(){const e=document.documentElement,o=e.scrollTop/(e.scrollHeight-e.clientHeight||1);n&&(n.style.width=Math.min(100,Math.max(0,o*100))+"%")}document.addEventListener("scroll",t,{passive:!0});window.addEventListener("resize",t);t();</script> <div class="article-grid" data-astro-cid-zm77yjld> <!-- 桌機側邊章節導覽：捲到哪一段就亮哪一條。
+         長文捲到一半最怕「不知道自己在哪、還剩多少」——這是站層級的定位感。 --> <nav class="side-toc" aria-label="章節導覽" data-astro-cid-zm77yjld> <p class="side-toc-title" data-astro-cid-zm77yjld>這篇的段落</p> <ol data-astro-cid-zm77yjld> <li data-astro-cid-zm77yjld><a href="#一句話定義" data-toc-link="一句話定義" data-astro-cid-zm77yjld>一句話定義</a></li><li data-astro-cid-zm77yjld><a href="#這條法則從哪來" data-toc-link="這條法則從哪來" data-astro-cid-zm77yjld>這條法則從哪來</a></li><li data-astro-cid-zm77yjld><a href="#官方的三個實務結論" data-toc-link="官方的三個實務結論" data-astro-cid-zm77yjld>官方的三個實務結論</a></li><li data-astro-cid-zm77yjld><a href="#一大小多大才叫夠大" data-toc-link="一大小多大才叫夠大" data-astro-cid-zm77yjld>一、大小：多大才叫夠大</a></li><li data-astro-cid-zm77yjld><a href="#二間距為什麼要留空隙" data-toc-link="二間距為什麼要留空隙" data-astro-cid-zm77yjld>二、間距：為什麼要留空隙</a></li><li data-astro-cid-zm77yjld><a href="#三位置螢幕上不是每個地方都一樣好點" data-toc-link="三位置螢幕上不是每個地方都一樣好點" data-astro-cid-zm77yjld>三、位置：螢幕上不是每個地方都一樣好點</a></li><li data-astro-cid-zm77yjld><a href="#四反過來用讓危險的動作難點" data-toc-link="四反過來用讓危險的動作難點" data-astro-cid-zm77yjld>四、反過來用：讓危險的動作「難點」</a></li><li data-astro-cid-zm77yjld><a href="#怎麼用在你的工作上" data-toc-link="怎麼用在你的工作上" data-astro-cid-zm77yjld>怎麼用在你的工作上</a></li><li data-astro-cid-zm77yjld><a href="#小結" data-toc-link="小結" data-astro-cid-zm77yjld>小結</a></li> </ol> </nav> <article class="reading" data-astro-cid-zm77yjld> <a href="/uai-wiki-html/articles" class="back" data-astro-cid-zm77yjld>← 全部文章</a> <div class="meta-top" data-astro-cid-zm77yjld> <span class="tag" style="background: color-mix(in srgb, var(--c2) 16%, transparent); border-color: var(--c2);" data-astro-cid-zm77yjld> UX 法則與心理學 </span> <span class="reading-time" data-astro-cid-zm77yjld>約 11 分鐘 · 更新 2026-08-07</span> </div> <h1 data-astro-cid-zm77yjld>Fitts 定律：東西越大越近，就越好點</h1> <!-- TL;DR 先行：ADHD 友善，讓人先抓到重點再決定要不要細讀。
+           它是這頁的第二主角，所以視覺重量刻意比章節清單重。 --> <aside class="tldr" aria-label="重點摘要" data-astro-cid-zm77yjld> <p class="tldr-title" data-astro-cid-zm77yjld>先抓重點</p> <ul data-astro-cid-zm77yjld><li data-astro-cid-zm77yjld>點到一個目標要花多少時間，取決於兩件事——它有多遠、它有多大。越近越大就越快。</li><li data-astro-cid-zm77yjld>所以按鈕要夠大、彼此要有間距、還要放在手指容易到的位置；這三件事就是這條法則的全部實務結論。</li><li data-astro-cid-zm77yjld>反過來用也成立：危險的動作（刪除、解除綁定）就該做小一點、放遠一點，讓人不容易誤觸。</li></ul> </aside> <!-- 窄螢幕沒有側欄，章節清單改收在這裡（預設收合，不佔開頭版面） --> <details class="toc-inline" data-astro-cid-zm77yjld> <summary data-astro-cid-zm77yjld>這篇有 9 個段落</summary> <ol data-astro-cid-zm77yjld><li data-astro-cid-zm77yjld><a href="#一句話定義" data-astro-cid-zm77yjld>一句話定義</a></li><li data-astro-cid-zm77yjld><a href="#這條法則從哪來" data-astro-cid-zm77yjld>這條法則從哪來</a></li><li data-astro-cid-zm77yjld><a href="#官方的三個實務結論" data-astro-cid-zm77yjld>官方的三個實務結論</a></li><li data-astro-cid-zm77yjld><a href="#一大小多大才叫夠大" data-astro-cid-zm77yjld>一、大小：多大才叫夠大</a></li><li data-astro-cid-zm77yjld><a href="#二間距為什麼要留空隙" data-astro-cid-zm77yjld>二、間距：為什麼要留空隙</a></li><li data-astro-cid-zm77yjld><a href="#三位置螢幕上不是每個地方都一樣好點" data-astro-cid-zm77yjld>三、位置：螢幕上不是每個地方都一樣好點</a></li><li data-astro-cid-zm77yjld><a href="#四反過來用讓危險的動作難點" data-astro-cid-zm77yjld>四、反過來用：讓危險的動作「難點」</a></li><li data-astro-cid-zm77yjld><a href="#怎麼用在你的工作上" data-astro-cid-zm77yjld>怎麼用在你的工作上</a></li><li data-astro-cid-zm77yjld><a href="#小結" data-astro-cid-zm77yjld>小結</a></li></ol> </details> <div class="prose" data-astro-cid-zm77yjld>  <h2 id="一句話定義">一句話定義</h2>
+<blockquote>
+<p><strong>取得一個目標所需的時間，是「到目標的距離」與「目標大小」的函數。</strong></p>
+<p>The time to acquire a target is a function of the distance to and size of the target.</p>
+</blockquote>
+<p>翻成白話：<strong>東西越遠、越小，就越難點；越近、越大，就越好點。</strong></p>
+<p>聽起來像廢話，但它是 1954 年就用實驗量出來的<strong>可預測數學關係</strong>——不是「感覺上比較好按」，是真的能算出快多少。這就是它能當設計依據的原因。</p>
+<blockquote>
+<p><strong>譯名說明</strong>：這條法則常見中譯為「<strong>費茨定律</strong>」，也有人寫「費茲定律」。本站保留英文 Fitts 以免混淆。
+如果你手上《使用者體驗法則 第二版》中譯本用的是別的譯法，以書為準——那才是你之後查閱時會看到的詞。</p>
+</blockquote>
+<h2 id="這條法則從哪來">這條法則從哪來</h2>
+<p>1954 年，心理學家 <strong>Paul Fitts</strong> 研究人類的運動系統，發現：<strong>移動到一個目標所需的時間，跟距離成正比、跟目標大小成反比。</strong></p>
+<p>他同時觀察到一件對設計很重要的事——<strong>速度與準確度的取捨（speed-accuracy trade-off）</strong>：動作越快、目標越小，出錯率就越高。</p>
+<p>換句話說，當你把按鈕做小，使用者不是「慢一點但還是點得到」，而是<strong>又慢又容易點錯</strong>。這兩個代價是一起來的。</p>
+<p>Fitts 定律後來被大量應用在 UX／UI，最直接的影響就是：<strong>互動按鈕要做大</strong>——尤其在用手指操作的行動裝置上。同理，<strong>使用者當下注意力所在的位置，跟他要按的按鈕之間，距離應該越短越好。</strong></p>
+<h2 id="官方的三個實務結論">官方的三個實務結論</h2>
+<p>Laws of UX 把這條法則濃縮成三點：</p>
+<ol>
+<li><strong>點擊目標要夠大</strong>，大到使用者能準確選中。</li>
+<li><strong>點擊目標之間要有足夠間距。</strong></li>
+<li><strong>點擊目標要放在介面上「容易到達」的區域。</strong></li>
+</ol>
+<p>這三點看似獨立，其實是同一件事的三面：<strong>大小</strong>、<strong>間距</strong>、<strong>位置</strong>。下面分開講。</p>
+<hr>
+<h2 id="一大小多大才叫夠大">一、大小：多大才叫夠大</h2>
+<p>各家設計系統的建議值：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>來源</th><th>最小點擊區</th></tr></thead><tbody><tr><td>Apple HIG</td><td>44 × 44 pt</td></tr><tr><td>Material Design</td><td>48 × 48 dp</td></tr><tr><td>WCAG 2.2（無障礙標準）</td><td>24 × 24 px（最低）／建議 44 × 44</td></tr></tbody></table>
+<p>實務上記 <strong>44×44</strong> 就夠用了，它同時滿足 Apple 和無障礙標準的建議值。</p>
+<h3 id="一個平面設計師最容易踩的坑">一個平面設計師最容易踩的坑</h3>
+<p><strong>「看起來的大小」不等於「點得到的大小」。</strong></p>
+<p>你在 Figma 裡畫一個 16px 的關閉圖示，視覺上剛剛好、很精緻。但使用者的手指要點的是那 16px——太小了。</p>
+<p>解法不是把圖示畫大，是<strong>把可點擊範圍撐大</strong>：</p>
+<ul>
+<li>圖示維持 16px（視覺不變）</li>
+<li>外面包一層 44×44 的容器，<code>padding</code> 撐開</li>
+<li>整個容器都可以點</li>
+</ul>
+<p>視覺輕盈、手感卻很好——這是專業和業餘的分界線之一。</p>
+<h2 id="二間距為什麼要留空隙">二、間距：為什麼要留空隙</h2>
+<p>目標之間太近，Fitts 定律會反過來咬你：使用者朝目標移動時，只要稍微偏一點就會落在<strong>隔壁</strong>那個目標上。</p>
+<p>而且這種錯誤特別惱人，因為它不是「沒點到」（什麼都沒發生，再點一次就好），是「<strong>點到別的</strong>」（發生了你不要的事，還得先復原）。</p>
+<p>實務建議：<strong>相鄰的可點擊元素至少留 8px 間距</strong>。放在清單、工具列、表格的行內操作按鈕上特別重要。</p>
+<h2 id="三位置螢幕上不是每個地方都一樣好點">三、位置：螢幕上不是每個地方都一樣好點</h2>
+<h3 id="神奇的邊緣與四角">神奇的邊緣與四角</h3>
+<p>這是 Fitts 定律最漂亮的一個推論：<strong>螢幕的邊緣和四角，等於「無限大」的目標。</strong></p>
+<p>因為滑鼠游標會被螢幕邊界擋住——你可以把滑鼠用力往上一甩，它就停在最上面那條線上，不會飛出去。所以邊緣的目標<strong>不需要精準瞄準</strong>，寬容度是無限的。</p>
+<p>這解釋了兩個經典設計：</p>
+<ul>
+<li><strong>macOS 把選單列貼在螢幕最頂端</strong>，所以「檔案」「編輯」這些選單超好點——你只要往上甩就對了。</li>
+<li><strong>Windows 的「開始」按鈕放在左下角</strong>，四角是「兩個方向都無限」的，比邊緣更好點。</li>
+</ul>
+<p>反面例子：<strong>Windows 早期把應用程式的選單列放在視窗內部</strong>（不是螢幕頂端），所以同樣的選單，在 Mac 上比在 Windows 上好點——這是實驗量測過的差異，不是果粉的錯覺。</p>
+<h3 id="手機拇指構得到的區域">手機：拇指構得到的區域</h3>
+<p>手機是單手拿的，拇指能舒服搆到的只有<strong>螢幕下半部</strong>。所以：</p>
+<ul>
+<li><strong>主要操作放底部</strong>（iOS 的 tab bar、Android 的底部導覽）</li>
+<li>螢幕<strong>右上角是最難搆到的地方</strong>（右手持機時）——這也是為什麼 iOS 把「返回」放在左上角卻同時支援「從左緣滑動返回」的手勢：因為左上角雖然位置不好，但邊緣手勢彌補了它。</li>
+</ul>
+<p>這是為什麼近年 App 的主要操作都往下移。不是流行，是生理限制。</p>
+<h2 id="四反過來用讓危險的動作難點">四、反過來用：讓危險的動作「難點」</h2>
+<p>這條法則最被忽略的用法：<strong>你可以故意違反它。</strong></p>
+<p>危險、不可逆的動作——刪除帳號、清空資料、解除綁定——應該：</p>
+<ul>
+<li>做<strong>小</strong>一點（但仍符合無障礙最低標準）</li>
+<li>放<strong>遠</strong>一點，離主要操作有距離</li>
+<li>不要跟「確定」「儲存」這種高頻按鈕並排</li>
+</ul>
+<p>確認對話框裡把「刪除」和「取消」放在一起、大小一樣、顏色一樣，就是在替使用者製造災難。</p>
+<hr>
+<h2 id="怎麼用在你的工作上">怎麼用在你的工作上</h2>
+<p>下次交稿前，拿這張清單逐項掃過去：</p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> 所有可點擊元素的<strong>實際點擊區</strong>（不是視覺大小）都 ≥ 44×44？</li>
+<li class="task-list-item"><input type="checkbox" disabled> 小圖示按鈕有用 <code>padding</code> 撐開點擊區，而不是只有圖示本身可以點？</li>
+<li class="task-list-item"><input type="checkbox" disabled> 相鄰的按鈕、清單項目的操作鈕，彼此至少留 8px？</li>
+<li class="task-list-item"><input type="checkbox" disabled> 手機版的<strong>主要操作</strong>是不是在螢幕下半部（拇指區）？</li>
+<li class="task-list-item"><input type="checkbox" disabled> 表單的「送出」按鈕，是不是就在最後一個欄位附近，而不是要滑很遠？</li>
+<li class="task-list-item"><input type="checkbox" disabled> 使用者「當下在看的地方」跟「他接下來要點的地方」之間，距離有沒有辦法再縮短？</li>
+<li class="task-list-item"><input type="checkbox" disabled> <strong>刪除／清空</strong>這類危險動作，有沒有刻意放遠、跟主要按鈕拉開？</li>
+<li class="task-list-item"><input type="checkbox" disabled> 有沒有哪個常用功能被放在右上角（手機最難搆到的位置）？</li>
+</ul>
+<h3 id="兩個跟同事溝通會用到的說法">兩個跟同事溝通會用到的說法</h3>
+<p>當工程師或 PM 說「按鈕做那麼大很醜」時，你可以說：</p>
+<blockquote>
+<p>這不是美感問題，是<strong>可量測的操作時間與錯誤率</strong>。Fitts 在 1954 年就證明了，目標變小會同時讓人變慢、而且更容易點錯——這兩個代價是綁在一起的。</p>
+</blockquote>
+<p>當有人堅持把主要操作放在頂端時：</p>
+<blockquote>
+<p>手機是單手拿的，右上角是拇指最難搆到的位置。把主要動作放那裡，等於每次使用都要換手或調整握姿。</p>
+</blockquote>
+<hr>
+<h2 id="小結">小結</h2>
+<p>Fitts 定律之所以重要，是因為它把「好不好按」這件原本靠感覺的事，變成<strong>可以計算、可以爭論、可以拿數字說服人</strong>的事。</p>
+<p>對剛從平面轉到 UI 的人來說，這條法則要建立的核心觀念是：<strong>你畫的不只是「看起來的東西」，還是「要被手指戳的東西」。</strong> 這兩者的尺寸，常常不一樣。</p>
+<hr>
+<blockquote>
+<p><strong>還沒解鎖</strong>：這條法則背後的心理學原理（人類運動控制系統為什麼會有速度—準確度取捨、資訊理論怎麼用來建模這件事）本篇沒有展開。之後若要深入，會另外開一篇談原理。</p>
+</blockquote>
+<p><em>這是「UX 法則與心理學」主題的文章。本篇譯自並改寫自 Laws of UX 官方免費全文，作者 Jon Yablonski 維護該站全文公開；設計系統的數值引自 Apple HIG 與 Material Design 官方文件。</em></p>  </div> <!-- 出處：每篇必標 --> <footer class="sources" data-astro-cid-zm77yjld> <p class="sources-title" data-astro-cid-zm77yjld>出處</p> <ul data-astro-cid-zm77yjld> <li data-astro-cid-zm77yjld> <span class="src-note" data-astro-cid-zm77yjld>譯自官方免費全文</span> <a href="https://lawsofux.com/fittss-law/" target="_blank" rel="noopener noreferrer" data-astro-cid-zm77yjld>Laws of UX — Fitts&#39;s Law（Jon Yablonski）</a> </li><li data-astro-cid-zm77yjld> <span class="src-note" data-astro-cid-zm77yjld>中譯本書目</span> <span data-astro-cid-zm77yjld>《使用者體驗法則 第二版》Jon Yablonski 著／盧仙萍 譯／歐萊禮</span> </li><li data-astro-cid-zm77yjld> <span class="src-note" data-astro-cid-zm77yjld>原始論文出處</span> <a href="https://en.wikipedia.org/wiki/Fitts%27s_law" target="_blank" rel="noopener noreferrer" data-astro-cid-zm77yjld>Paul M. Fitts (1954), The information capacity of the human motor system</a> </li><li data-astro-cid-zm77yjld> <span class="src-note" data-astro-cid-zm77yjld>延伸閱讀</span> <a href="https://www.nngroup.com/articles/fitts-law/" target="_blank" rel="noopener noreferrer" data-astro-cid-zm77yjld>Fitts&#39;s Law and Its Applications in UX — Nielsen Norman Group</a> </li> </ul> </footer> </article> </div> <script type="module">const n=document.querySelectorAll("[data-toc-link]");if(n.length){const o=new Map;n.forEach(e=>{const t=document.getElementById(e.getAttribute("data-toc-link"));t&&o.set(t,e)});const c=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&(n.forEach(s=>s.classList.remove("on")),o.get(t.target)?.classList.add("on"))})},{rootMargin:"-10% 0px -80% 0px"});o.forEach((e,t)=>c.observe(t))}</script>   </main> <footer class="site-footer" data-astro-cid-37fxchfa> <div class="wrap" data-astro-cid-37fxchfa> <p data-astro-cid-37fxchfa>升職消化中 · 個人 UI/UX ＋ AI 學習庫。內容為學習消化用途，出處標於各文章底部。</p> </div> </footer>  </body> </html>

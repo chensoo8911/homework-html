@@ -1,0 +1,211 @@
+<!DOCTYPE html><html lang="zh-Hant" data-astro-cid-37fxchfa> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="一個給自己用的 UI/UX ＋ AI 學習站"><link rel="icon" href="/uai-wiki-html/favicon.svg" type="image/svg+xml"><title>小G小L 雙腦協作與指令（Gemini 苦力 × NotebookLM 圖書館員 × Claude 審查主廚）｜筆記｜升職消化中</title><!-- 主題初始化：在畫面繪製前決定深淺色，避免閃爍 --><script>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+      })();
+    </script><link rel="stylesheet" href="/uai-wiki-html/_astro/_slug_.3ZshJw83.css">
+<style>.progress[data-astro-cid-mu6cnre2]{position:fixed;inset:0 0 auto;height:4px;z-index:60;background:transparent;pointer-events:none}#progress-bar[data-astro-cid-mu6cnre2]{display:block;height:100%;width:0%;background:var(--accent);transition:width .1s linear}
+.article-grid[data-astro-cid-5eggoaxc]{max-width:68rem;margin:0 auto;padding:0 1.5rem}.reading[data-astro-cid-5eggoaxc]{max-width:var(--font-reading-width);margin:0 auto}.back[data-astro-cid-5eggoaxc]{display:inline-block;margin-bottom:1.5rem;color:var(--muted);text-decoration:none;font-size:.9rem}.back[data-astro-cid-5eggoaxc]:hover{color:var(--accent)}.meta-top[data-astro-cid-5eggoaxc]{display:flex;flex-wrap:wrap;align-items:center;gap:.8rem;margin-bottom:.8rem}.date[data-astro-cid-5eggoaxc]{color:var(--muted);font-size:.88rem}.note-hint[data-astro-cid-5eggoaxc]{color:var(--muted);font-size:.92rem;border-left:2px solid var(--line);padding-left:.9rem;margin:0 0 2rem}.side-toc[data-astro-cid-5eggoaxc]{display:none}@media(min-width:1100px){.article-grid[data-astro-cid-5eggoaxc]{display:grid;grid-template-columns:13rem minmax(0,var(--font-reading-width));gap:4rem;justify-content:center;align-items:start}.reading[data-astro-cid-5eggoaxc]{margin:0}.side-toc[data-astro-cid-5eggoaxc]{display:block;position:sticky;top:6rem;padding-top:4.5rem}}.side-toc-title[data-astro-cid-5eggoaxc]{font-size:.78rem;letter-spacing:.1em;color:var(--muted);margin:0 0 .8rem}.side-toc[data-astro-cid-5eggoaxc] ol[data-astro-cid-5eggoaxc]{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}.side-toc[data-astro-cid-5eggoaxc] a[data-astro-cid-5eggoaxc]{display:block;padding:.45rem .9rem;margin-left:-2px;border-left:2px solid transparent;color:var(--muted);text-decoration:none;font-size:.88rem;line-height:1.45}.side-toc[data-astro-cid-5eggoaxc] a[data-astro-cid-5eggoaxc]:hover{color:var(--ink)}.side-toc[data-astro-cid-5eggoaxc] a[data-astro-cid-5eggoaxc].on{color:var(--ink);font-weight:600;border-left-color:var(--accent)}.prose[data-astro-cid-5eggoaxc]{margin-top:2.5rem}.prose[data-astro-cid-5eggoaxc] h2{scroll-margin-top:5rem;padding-top:1.5em;border-top:1px solid var(--line)}.prose[data-astro-cid-5eggoaxc] h2:first-child{border-top:none;padding-top:0;margin-top:0}.prose[data-astro-cid-5eggoaxc] strong{color:var(--ink);font-weight:700}.prose[data-astro-cid-5eggoaxc] img{max-width:100%;height:auto;border-radius:var(--radius)}.prose[data-astro-cid-5eggoaxc] blockquote{margin:1.8em 0;padding:1em 1.4em;border-left:3px solid var(--accent);color:var(--ink-soft);background:var(--bg-card);border-radius:0 8px 8px 0}.prose[data-astro-cid-5eggoaxc] blockquote p:last-child{margin-bottom:0}.prose[data-astro-cid-5eggoaxc] code{background:var(--bg-card);padding:.1em .4em;border-radius:5px;font-size:.9em}.prose[data-astro-cid-5eggoaxc] pre{padding:1rem 1.2rem;border-radius:var(--radius);overflow-x:auto;border:1px solid var(--line)}.prose[data-astro-cid-5eggoaxc] hr{border:none;border-top:1px solid var(--line);margin:3em 0}.prose[data-astro-cid-5eggoaxc] ul,.prose[data-astro-cid-5eggoaxc] ol{padding-left:1.4rem;margin:0 0 1.5em}.prose[data-astro-cid-5eggoaxc] li{margin:.6em 0}.prose[data-astro-cid-5eggoaxc] table{width:100%;border-collapse:collapse;margin:1.8em 0;font-size:.95rem;line-height:1.7;display:block;overflow-x:auto}.prose[data-astro-cid-5eggoaxc] th,.prose[data-astro-cid-5eggoaxc] td{padding:.7em 1em;text-align:left;border-bottom:1px solid var(--line)}.prose[data-astro-cid-5eggoaxc] th{font-size:.82rem;letter-spacing:.06em;color:var(--muted);font-weight:600;border-bottom-width:2px}.prose[data-astro-cid-5eggoaxc] tbody tr:nth-child(2n){background:var(--bg-card)}.prose[data-astro-cid-5eggoaxc] .dead-link{color:var(--muted);border-bottom:1px dotted var(--muted);cursor:help}.origin[data-astro-cid-5eggoaxc]{margin-top:4rem;padding-top:1.5rem;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}.origin[data-astro-cid-5eggoaxc] p[data-astro-cid-5eggoaxc]{margin:0 0 .4em}.origin[data-astro-cid-5eggoaxc] code[data-astro-cid-5eggoaxc]{background:var(--bg-card);padding:.15em .5em;border-radius:5px;font-size:.95em}
+</style></head> <body data-astro-cid-37fxchfa> <header class="site-header" data-astro-cid-3ef6ksr2> <div class="wrap bar" data-astro-cid-3ef6ksr2> <a href="/uai-wiki-html/" class="brand" data-astro-cid-3ef6ksr2> <span class="brand-mark" data-astro-cid-3ef6ksr2>升</span> <span class="brand-text" data-astro-cid-3ef6ksr2>升職消化中</span> </a> <nav class="nav" aria-label="主導覽" data-astro-cid-3ef6ksr2> <a href="/uai-wiki-html/articles" class="nav-item" data-astro-cid-3ef6ksr2> <span class="nav-text" data-astro-cid-3ef6ksr2>讀</span> </a><a href="/uai-wiki-html/glossary" class="nav-item on" aria-current="page" data-astro-cid-3ef6ksr2> <span class="nav-text" data-astro-cid-3ef6ksr2>查</span> </a><a href="/uai-wiki-html/resources" class="nav-item" data-astro-cid-3ef6ksr2> <span class="nav-text" data-astro-cid-3ef6ksr2>找</span> </a> <button id="theme-toggle" class="theme-toggle" type="button" aria-label="切換深淺色" data-astro-cid-x3pjskd3> <span class="i-sun" data-astro-cid-x3pjskd3>☀︎</span><span class="i-moon" data-astro-cid-x3pjskd3>☾</span> </button>  <script type="module">document.getElementById("theme-toggle")?.addEventListener("click",()=>{const t=document.documentElement,e=t.getAttribute("data-theme")==="dark"?"light":"dark";t.setAttribute("data-theme",e);try{localStorage.setItem("theme",e)}catch{}});</script> </nav> </div> </header>  <main data-astro-cid-37fxchfa>  <div class="progress" aria-hidden="true" data-astro-cid-mu6cnre2><span id="progress-bar" data-astro-cid-mu6cnre2></span></div>  <script type="module">const n=document.getElementById("progress-bar");function t(){const e=document.documentElement,o=e.scrollTop/(e.scrollHeight-e.clientHeight||1);n&&(n.style.width=Math.min(100,Math.max(0,o*100))+"%")}document.addEventListener("scroll",t,{passive:!0});window.addEventListener("resize",t);t();</script> <div class="article-grid" data-astro-cid-5eggoaxc> <nav class="side-toc" aria-label="章節導覽" data-astro-cid-5eggoaxc> <p class="side-toc-title" data-astro-cid-5eggoaxc>這篇的段落</p> <ol data-astro-cid-5eggoaxc><li data-astro-cid-5eggoaxc><a href="#一三個角色分工" data-toc-link="一三個角色分工" data-astro-cid-5eggoaxc>一、三個角色分工</a></li><li data-astro-cid-5eggoaxc><a href="#二日常三步流程小g" data-toc-link="二日常三步流程小g" data-astro-cid-5eggoaxc>二、日常三步流程（小G）</a></li><li data-astro-cid-5eggoaxc><a href="#三同一個-session-可以怎麼玩三種玩法" data-toc-link="三同一個-session-可以怎麼玩三種玩法" data-astro-cid-5eggoaxc>三、同一個 session 可以怎麼玩（三種玩法）</a></li><li data-astro-cid-5eggoaxc><a href="#四小lnotebooklm玩法" data-toc-link="四小lnotebooklm玩法" data-astro-cid-5eggoaxc>四、小L（NotebookLM）玩法</a></li><li data-astro-cid-5eggoaxc><a href="#五什麼事交給誰" data-toc-link="五什麼事交給誰" data-astro-cid-5eggoaxc>五、什麼事交給誰</a></li><li data-astro-cid-5eggoaxc><a href="#六環境備忘出問題時看這裡" data-toc-link="六環境備忘出問題時看這裡" data-astro-cid-5eggoaxc>六、環境備忘（出問題時看這裡）</a></li></ol> </nav> <article class="reading" data-astro-cid-5eggoaxc> <a href="/uai-wiki-html/notes" class="back" data-astro-cid-5eggoaxc>← 全部筆記</a> <div class="meta-top" data-astro-cid-5eggoaxc> <span class="tag" data-astro-cid-5eggoaxc>AI與Claude工具</span>  </div> <h1 data-astro-cid-5eggoaxc>小G小L 雙腦協作與指令（Gemini 苦力 × NotebookLM 圖書館員 × Claude 審查主廚）</h1>  <div class="prose" data-astro-cid-5eggoaxc> <blockquote>
+<p>記錄日期：2026-07-16（部署完成於 2026-07-10）
+概念：<strong>Gemini 當量產苦力、NotebookLM 當圖書館員、Claude 當審查主廚</strong>——像設計團隊裡「助理先出 20 版草稿，資深設計師挑毛病定稿」的分工。</p>
+</blockquote>
+<p><strong>本篇目錄</strong>：一、三個角色分工　二、小G日常三步流程　三、同一 session 三種玩法　四、小L玩法（<strong>4.1 中文指令</strong>／<strong>4.2 底層 notebooklm CLI 指令</strong>）　五、什麼事交給誰　六、環境備忘</p>
+<h2 id="一三個角色分工">一、三個角色分工</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>工具</th><th>角色</th><th>怎麼叫它</th></tr></thead><tbody><tr><td>小G（Gemini）</td><td>苦力：量產程式碼、分析大量文字、狂寫測試</td><td>終端機打 <code>小G 問題</code></td></tr><tr><td>小L（NotebookLM）</td><td>圖書館員：吞規格書 PDF／網址，給有根據的答案、規格小抄、語音導覽</td><td>終端機打 <code>小L 說明</code> 看用法</td></tr><tr><td>Claude Code</td><td>主廚：審查產出、抓漏洞、最終定稿、寫入檔案、跑測試</td><td>平常的 Claude Code 對話</td></tr><tr><td>共同記憶資料夾</td><td>三個 AI 交接工作的暫存區</td><td><code>~/Claude/雙腦協作/</code></td></tr></tbody></table>
+<h2 id="二日常三步流程小g">二、日常三步流程（小G）</h2>
+<p><strong>步驟一</strong>：終端機叫小G做粗活，結果直接存進暫存檔：</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">小G</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> 今天天氣如何</span><span style="color:#6A737D;--shiki-dark:#6A737D">   # 或 小G：今天天氣如何，都不用打引號</span></span></code></pre>
+<blockquote>
+<p>說明：小G 會自動落檔到 <code>gemini_review.md</code>；小G 還會自動備援，主通道塞車時自己切換備用通道，看到「改走直連通道」的提示是正常現象。</p>
+</blockquote>
+<p><strong>步驟二</strong>：回到 Claude Code，只要打一個 <code>.</code>（句點）。</p>
+<p><strong>步驟三</strong>：Claude 自動讀取 <code>gemini_review.md</code>，回覆兩段：</p>
+<ul>
+<li><strong>漏洞/死角審查</strong>：Gemini 漏掉的邊界條件、安全或效能問題</li>
+<li><strong>終極修正案</strong>：Claude 重構後的定稿，需要時直接寫入專案檔案並跑測試</li>
+</ul>
+<h2 id="三同一個-session-可以怎麼玩三種玩法">三、同一個 session 可以怎麼玩（三種玩法）</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>玩法</th><th>怎麼做</th><th>適合</th></tr></thead><tbody><tr><td><strong>① 叫我去叫小G</strong>（最推薦）</td><td>在 Claude Code 對話直接說「<strong>叫小G</strong>幫我生 10 個標語」→ Claude 代跑指令、拿到產出、審查完交件</td><td>日常小事，一句話搞定</td></tr><tr><td><strong>② <code>!</code> 直通終端機</strong></td><td>在 Claude Code 輸入框打 <code>! 小G：問題</code>（驚嘆號＋空格開頭）→ 跳過 Claude 直接執行，結果進對話、Claude 也看得到</td><td>想自己下指令但不想切視窗</td></tr><tr><td><strong>③ 開兩個視窗</strong>（原始設計）</td><td>終端機跑 <code>小G ... > gemini_review.md</code> 落檔 → Claude Code 打 <code>.</code> 觸發審查</td><td>Gemini 產出很長、想先自己過目</td></tr></tbody></table>
+<blockquote>
+<p>記住分工：小G 是純文字大腦，<strong>看不到你的電腦</strong>；「檢查本機○○」這類問題要問 Claude。</p>
+</blockquote>
+<h2 id="四小lnotebooklm玩法">四、小L（NotebookLM）玩法</h2>
+<p>小L 跟小G 的差別：小G 憑「腦中知識」回答；<strong>小L 只根據你餵它的文件回答</strong>（有出處、不瞎掰），適合規格書、合約、長文件——像圖書館員只回答書架上有的書，不會憑印象亂講。</p>
+<h3 id="41-小l-中文指令日常用這個就好">4.1 小L 中文指令（日常用這個就好）</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>指令</th><th>做什麼</th></tr></thead><tbody><tr><td><code>小L 清單</code></td><td>看你所有 NotebookLM 筆記本</td></tr><tr><td><code>小L 用 名稱</code></td><td>切換到某本筆記本（名稱打部分就行）</td></tr><tr><td><code>小L 加入 檔案或網址</code></td><td>餵文件（PDF、txt、網頁連結都吃）</td></tr><tr><td><code>小L：任何問題</code></td><td>針對筆記本內容問答（附出處編號）</td></tr><tr><td><code>小L 摘要</code></td><td>提煉規格小抄 → 自動存 <code>spec_summary.md</code> 給 Claude 當開發小抄</td></tr><tr><td><code>小L 播客</code></td><td>把筆記本做成語音導覽 mp3（要等幾分鐘）</td></tr></tbody></table>
+<p>典型流程：<code>小L 用 某專案</code> → <code>小L 加入 規格書.pdf</code> → <code>小L 摘要</code> → 回 Claude Code 開工，Claude 自動讀小抄。</p>
+<h3 id="42-底層-notebooklm-cli-指令小l-中文指令背後實際跑的東西">4.2 底層 notebooklm CLI 指令（小L 中文指令背後實際跑的東西）</h3>
+<blockquote>
+<p>非官方 NotebookLM 命令列工具（notebooklm-py），已裝在 Mac 上。在「終端機」直接輸入指令使用。</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>指令</th><th>做什麼</th></tr></thead><tbody><tr><td><code>notebooklm list</code></td><td>列出所有筆記本</td></tr><tr><td><code>notebooklm use 名稱</code></td><td>切換到某本筆記本（打部分名稱或 ID 就行）</td></tr><tr><td><code>notebooklm ask "問題"</code></td><td>對目前筆記本提問</td></tr><tr><td><code>notebooklm status</code></td><td>看目前在哪本筆記本</td></tr><tr><td><code>notebooklm create "新筆記本"</code></td><td>建立新筆記本</td></tr><tr><td><code>notebooklm doctor</code></td><td>檢查登入狀態是否正常</td></tr><tr><td><code>notebooklm login</code></td><td>重新登入（登入失效時才需要）</td></tr><tr><td><code>notebooklm --help</code></td><td>完整功能清單（含生成播客、測驗等）</td></tr></tbody></table>
+<p>使用邏輯：像「先走進一個房間再說話」——先用 <code>use</code> 選定筆記本，之後的 <code>ask</code> 都是問那一本的內容。也可以直接請 Claude 代為操作（例：「幫我問 NotebookLM 的某某筆記本…」）。</p>
+<blockquote>
+<p>⚙️ <strong>小雜工鐵則</strong>：小G／小L 的產出一律自動落檔（<code>gemini_review.md</code>／<code>notebooklm_review.md</code>，帶時間戳＋問題）。Claude 派工給他們時走「安靜模式」，對話只收一行「完成＋字數」——雜工不准浪費指揮官的資源；你自己在終端機手打不受影響，照樣印全文。</p>
+</blockquote>
+<h2 id="五什麼事交給誰">五、什麼事交給誰</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>情境</th><th>交給誰</th><th>原因</th></tr></thead><tbody><tr><td>「幫我生 30 個測試案例」「翻譯這一大篇」</td><td>小G（Gemini）</td><td>量大、便宜、不用太聰明</td></tr><tr><td>「這段程式碼有沒有問題」「幫我改到能上線」</td><td>Claude</td><td>需要判斷力和動手改檔的權限</td></tr><tr><td>超長規格書先摘重點</td><td>小L → 存 <code>spec_summary.md</code></td><td>摘完 Claude 再讀小抄，省 token</td></tr></tbody></table>
+<h2 id="六環境備忘出問題時看這裡">六、環境備忘（出問題時看這裡）</h2>
+<ul>
+<li>小G 別名與金鑰設定在 <code>~/.zshrc</code>（有備份）；小L 本體是 <code>notebooklm-py</code>，指令在 <code>~/.local/bin/notebooklm</code>，包裝腳本在 <code>~/Claude/雙腦協作/小L.sh</code></li>
+<li>小L 走 Google 非官方 API，哪天突然壞掉屬正常能量釋放，叫 Claude 修；登入失效時終端機跑 <code>notebooklm login</code></li>
+<li>免費額度：主模型每分鐘 20 次請求，狂刷看到「稍後再試」等一分鐘就好；小G 塞車時會自動切備用模型，看到「改走直連通道」提示屬正常</li>
+</ul> </div> <!-- 筆記沒有外部出處，改標「這篇的本體在哪」——要改內容是去改學習庫，不是改網站 --> <footer class="origin" data-astro-cid-5eggoaxc> <p data-astro-cid-5eggoaxc>這是從學習庫同步過來的個人筆記。</p> <p class="path" data-astro-cid-5eggoaxc><code data-astro-cid-5eggoaxc>1_UIAI學習庫/知識庫/AI與Claude工具/小G小L雙腦協作與指令.md</code></p> </footer> </article> </div> <script type="module">const n=document.querySelectorAll("[data-toc-link]");if(n.length){const o=new Map;n.forEach(e=>{const t=document.getElementById(e.getAttribute("data-toc-link"));t&&o.set(t,e)});const c=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&(n.forEach(s=>s.classList.remove("on")),o.get(t.target)?.classList.add("on"))})},{rootMargin:"-10% 0px -80% 0px"});o.forEach((e,t)=>c.observe(t))}</script>   </main> <footer class="site-footer" data-astro-cid-37fxchfa> <div class="wrap" data-astro-cid-37fxchfa> <p data-astro-cid-37fxchfa>升職消化中 · 個人 UI/UX ＋ AI 學習庫。內容為學習消化用途，出處標於各文章底部。</p> </div> </footer>  </body> </html>

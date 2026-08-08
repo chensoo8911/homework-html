@@ -1,0 +1,75 @@
+<!DOCTYPE html><html lang="zh-Hant" data-astro-cid-37fxchfa> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="一個給自己用的 UI/UX ＋ AI 學習站"><link rel="icon" href="/uai-wiki-html/favicon.svg" type="image/svg+xml"><title>Apple HIG 的 8 條設計原則（現行版）｜升職消化中</title><!-- 主題初始化：在畫面繪製前決定深淺色，避免閃爍 --><script>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+      })();
+    </script><link rel="stylesheet" href="/uai-wiki-html/_astro/_slug_.3ZshJw83.css">
+<style>.progress[data-astro-cid-mu6cnre2]{position:fixed;inset:0 0 auto;height:4px;z-index:60;background:transparent;pointer-events:none}#progress-bar[data-astro-cid-mu6cnre2]{display:block;height:100%;width:0%;background:var(--accent);transition:width .1s linear}
+</style>
+<link rel="stylesheet" href="/uai-wiki-html/_astro/_slug_.DmvNEfVi.css"></head> <body data-astro-cid-37fxchfa> <header class="site-header" data-astro-cid-3ef6ksr2> <div class="wrap bar" data-astro-cid-3ef6ksr2> <a href="/uai-wiki-html/" class="brand" data-astro-cid-3ef6ksr2> <span class="brand-mark" data-astro-cid-3ef6ksr2>升</span> <span class="brand-text" data-astro-cid-3ef6ksr2>升職消化中</span> </a> <nav class="nav" aria-label="主導覽" data-astro-cid-3ef6ksr2> <a href="/uai-wiki-html/articles" class="nav-item on" aria-current="page" data-astro-cid-3ef6ksr2> <span class="nav-text" data-astro-cid-3ef6ksr2>讀</span> </a><a href="/uai-wiki-html/glossary" class="nav-item" data-astro-cid-3ef6ksr2> <span class="nav-text" data-astro-cid-3ef6ksr2>查</span> </a><a href="/uai-wiki-html/resources" class="nav-item" data-astro-cid-3ef6ksr2> <span class="nav-text" data-astro-cid-3ef6ksr2>找</span> </a> <button id="theme-toggle" class="theme-toggle" type="button" aria-label="切換深淺色" data-astro-cid-x3pjskd3> <span class="i-sun" data-astro-cid-x3pjskd3>☀︎</span><span class="i-moon" data-astro-cid-x3pjskd3>☾</span> </button>  <script type="module">document.getElementById("theme-toggle")?.addEventListener("click",()=>{const t=document.documentElement,e=t.getAttribute("data-theme")==="dark"?"light":"dark";t.setAttribute("data-theme",e);try{localStorage.setItem("theme",e)}catch{}});</script> </nav> </div> </header>  <main data-astro-cid-37fxchfa>  <div class="progress" aria-hidden="true" data-astro-cid-mu6cnre2><span id="progress-bar" data-astro-cid-mu6cnre2></span></div>  <script type="module">const n=document.getElementById("progress-bar");function t(){const e=document.documentElement,o=e.scrollTop/(e.scrollHeight-e.clientHeight||1);n&&(n.style.width=Math.min(100,Math.max(0,o*100))+"%")}document.addEventListener("scroll",t,{passive:!0});window.addEventListener("resize",t);t();</script> <div class="article-grid" data-astro-cid-zm77yjld> <!-- 桌機側邊章節導覽：捲到哪一段就亮哪一條。
+         長文捲到一半最怕「不知道自己在哪、還剩多少」——這是站層級的定位感。 --> <nav class="side-toc" aria-label="章節導覽" data-astro-cid-zm77yjld> <p class="side-toc-title" data-astro-cid-zm77yjld>這篇的段落</p> <ol data-astro-cid-zm77yjld> <li data-astro-cid-zm77yjld><a href="#hig-是什麼" data-toc-link="hig-是什麼" data-astro-cid-zm77yjld>HIG 是什麼</a></li><li data-astro-cid-zm77yjld><a href="#先更正一個常見誤解" data-toc-link="先更正一個常見誤解" data-astro-cid-zm77yjld>先更正一個常見誤解</a></li><li data-astro-cid-zm77yjld><a href="#現行-8-條設計原則" data-toc-link="現行-8-條設計原則" data-astro-cid-zm77yjld>現行 8 條設計原則</a></li><li data-astro-cid-zm77yjld><a href="#三個可以馬上用的實務點" data-toc-link="三個可以馬上用的實務點" data-astro-cid-zm77yjld>三個可以馬上用的實務點</a></li> </ol> </nav> <article class="reading" data-astro-cid-zm77yjld> <a href="/uai-wiki-html/articles" class="back" data-astro-cid-zm77yjld>← 全部文章</a> <div class="meta-top" data-astro-cid-zm77yjld> <span class="tag" style="background: color-mix(in srgb, var(--c1) 16%, transparent); border-color: var(--c1);" data-astro-cid-zm77yjld> 設計系統 </span> <span class="reading-time" data-astro-cid-zm77yjld>約 6 分鐘 · 更新 2026-07-23</span> </div> <h1 data-astro-cid-zm77yjld>Apple HIG 的 8 條設計原則（現行版）</h1> <!-- TL;DR 先行：ADHD 友善，讓人先抓到重點再決定要不要細讀。
+           它是這頁的第二主角，所以視覺重量刻意比章節清單重。 --> <aside class="tldr" aria-label="重點摘要" data-astro-cid-zm77yjld> <p class="tldr-title" data-astro-cid-zm77yjld>先抓重點</p> <ul data-astro-cid-zm77yjld><li data-astro-cid-zm77yjld>HIG 是 Apple 官方設計指南，教你在任何 Apple 平台做出好體驗。</li><li data-astro-cid-zm77yjld>現行核心是 8 條原則：目的、自主、責任、熟悉、彈性、簡潔、工藝、愉悅。</li><li data-astro-cid-zm77yjld>注意：舊版常被引用的『Clarity／Deference／Depth』已不是現行主軸，別再背錯。</li></ul> </aside> <!-- 窄螢幕沒有側欄，章節清單改收在這裡（預設收合，不佔開頭版面） --> <details class="toc-inline" data-astro-cid-zm77yjld> <summary data-astro-cid-zm77yjld>這篇有 4 個段落</summary> <ol data-astro-cid-zm77yjld><li data-astro-cid-zm77yjld><a href="#hig-是什麼" data-astro-cid-zm77yjld>HIG 是什麼</a></li><li data-astro-cid-zm77yjld><a href="#先更正一個常見誤解" data-astro-cid-zm77yjld>先更正一個常見誤解</a></li><li data-astro-cid-zm77yjld><a href="#現行-8-條設計原則" data-astro-cid-zm77yjld>現行 8 條設計原則</a></li><li data-astro-cid-zm77yjld><a href="#三個可以馬上用的實務點" data-astro-cid-zm77yjld>三個可以馬上用的實務點</a></li></ol> </details> <div class="prose" data-astro-cid-zm77yjld>  <h2 id="hig-是什麼">HIG 是什麼</h2>
+<blockquote>
+<p>“The HIG contains guidance and best practices that can help you design a great experience for any Apple platform.”
+（HIG 收錄指南與最佳實務，幫你在任何 Apple 平台上做出好體驗。）</p>
+</blockquote>
+<p>簡單說，<strong>HIG（Human Interface Guidelines）就是 Apple 的設計聖經</strong>。從 iPhone、iPad、Mac 到 Watch，Apple 把「怎樣叫做好設計」寫成一套可參照的原則與規範。</p>
+<h2 id="先更正一個常見誤解">先更正一個常見誤解</h2>
+<p>很多舊教材（包括網路上大量文章）會說 Apple 的三大原則是 <strong>Clarity（清晰）／Deference（謙遜）／Depth（層次）</strong>。</p>
+<p><strong>這已經是過時的版本。</strong> Apple 現行 HIG 把設計原則改寫成 <strong>8 條</strong>。如果你正在為升職準備，記新的這套，別在面試或報告裡講錯。</p>
+<h2 id="現行-8-條設計原則">現行 8 條設計原則</h2>
+<p>每條我都附上 Apple 的原文標語，加上白話解釋：</p>
+<h3 id="1-purpose-目的">1. Purpose 目的</h3>
+<blockquote>
+<p>“Make something meaningful.”</p>
+</blockquote>
+<p>做<strong>有意義</strong>的東西。動手前先問：對使用者來說，最重要的是什麼？</p>
+<h3 id="2-agency-自主">2. Agency 自主</h3>
+<blockquote>
+<p>“Let people do things their own way.”</p>
+</blockquote>
+<p>讓人用<strong>自己的方式</strong>做事。給使用者自由，並確保任何錯誤都能回復。</p>
+<h3 id="3-responsibility-責任">3. Responsibility 責任</h3>
+<blockquote>
+<p>“Act in people’s best interest.”</p>
+</blockquote>
+<p>以<strong>使用者的利益</strong>為先。重視安全、隱私，資訊要透明。</p>
+<h3 id="4-familiarity-熟悉">4. Familiarity 熟悉</h3>
+<blockquote>
+<p>“Build on what people know.”</p>
+</blockquote>
+<p>建立在人們<strong>已經懂</strong>的東西上。沿用實體世界與數位世界的既有慣例，並一致地使用。（這正好呼應 UX 法則裡的 <a href="./jakobs-law">Jakob 定律</a>。）</p>
+<h3 id="5-flexibility-彈性">5. Flexibility 彈性</h3>
+<blockquote>
+<p>“Adapt to diverse contexts and needs.”</p>
+</blockquote>
+<p>適應<strong>不同情境與需求</strong>。支援多種裝置、輸入方式，並把<strong>無障礙（accessibility）從一開始就當成優先</strong>，不是事後才補。</p>
+<h3 id="6-simplicity-簡潔">6. Simplicity 簡潔</h3>
+<blockquote>
+<p>“Be clear and direct.”</p>
+</blockquote>
+<p>清楚、直接。每個元素都要有<strong>存在的理由</strong>。</p>
+<blockquote>
+<p><strong>簡潔 ≠ 極簡</strong>。Apple 特別強調 “Simplicity isn’t minimalism”——簡潔是聚焦在有用的東西，不是把東西通通拿掉。</p>
+</blockquote>
+<h3 id="7-craft-工藝">7. Craft 工藝</h3>
+<blockquote>
+<p>“Care about every detail.”</p>
+</blockquote>
+<p>在意<strong>每個細節</strong>。品質，就是你在乎程度的體現。</p>
+<h3 id="8-delight-愉悅">8. Delight 愉悅</h3>
+<blockquote>
+<p>“Make it human.”</p>
+</blockquote>
+<p>讓體驗有<strong>人味</strong>。想清楚你要喚起使用者什麼情緒。</p>
+<h2 id="三個可以馬上用的實務點">三個可以馬上用的實務點</h2>
+<ol>
+<li><strong>版面：維持可預期的位置</strong> — 跨不同裝置與尺寸時，把內容和控制項放在使用者<strong>預期得到</strong>的固定位置，別讓他們每換一台裝置就重找。</li>
+<li><strong>排版：用層級幫人定位</strong> — 用字級與排版建立清楚層級，讓使用者一眼知道「我在哪、下一步是什麼」。</li>
+<li><strong>無障礙：從第一天就做</strong> — 對比、字級、可點擊範圍，設計初期就納入，而不是上線前補救。</li>
+</ol>
+<hr>
+<p><em>這是「設計系統」主題的文章之一。內容摘要／翻譯自 Apple 官方 HIG（2026 現行版）。設計原則區塊為官方原文之翻譯改寫，已標註來源子頁。</em></p>  </div> <!-- 出處：每篇必標 --> <footer class="sources" data-astro-cid-zm77yjld> <p class="sources-title" data-astro-cid-zm77yjld>出處</p> <ul data-astro-cid-zm77yjld> <li data-astro-cid-zm77yjld> <span class="src-note" data-astro-cid-zm77yjld>摘要自官方文件</span> <a href="https://developer.apple.com/design/human-interface-guidelines/" target="_blank" rel="noopener noreferrer" data-astro-cid-zm77yjld>Apple — Human Interface Guidelines 首頁</a> </li><li data-astro-cid-zm77yjld> <span class="src-note" data-astro-cid-zm77yjld>譯自並改寫自官方原文</span> <a href="https://developer.apple.com/design/human-interface-guidelines/design-principles" target="_blank" rel="noopener noreferrer" data-astro-cid-zm77yjld>Apple — Design principles（8 條正文）</a> </li> </ul> </footer> </article> </div> <script type="module">const n=document.querySelectorAll("[data-toc-link]");if(n.length){const o=new Map;n.forEach(e=>{const t=document.getElementById(e.getAttribute("data-toc-link"));t&&o.set(t,e)});const c=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&(n.forEach(s=>s.classList.remove("on")),o.get(t.target)?.classList.add("on"))})},{rootMargin:"-10% 0px -80% 0px"});o.forEach((e,t)=>c.observe(t))}</script>   </main> <footer class="site-footer" data-astro-cid-37fxchfa> <div class="wrap" data-astro-cid-37fxchfa> <p data-astro-cid-37fxchfa>升職消化中 · 個人 UI/UX ＋ AI 學習庫。內容為學習消化用途，出處標於各文章底部。</p> </div> </footer>  </body> </html>

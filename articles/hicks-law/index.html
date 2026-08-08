@@ -1,0 +1,112 @@
+<!DOCTYPE html><html lang="zh-Hant" data-astro-cid-37fxchfa> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="一個給自己用的 UI/UX ＋ AI 學習站"><link rel="icon" href="/uai-wiki-html/favicon.svg" type="image/svg+xml"><title>Hick 定律：選項越多，人越慢｜升職消化中</title><!-- 主題初始化：在畫面繪製前決定深淺色，避免閃爍 --><script>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+      })();
+    </script><link rel="stylesheet" href="/uai-wiki-html/_astro/_slug_.3ZshJw83.css">
+<style>.progress[data-astro-cid-mu6cnre2]{position:fixed;inset:0 0 auto;height:4px;z-index:60;background:transparent;pointer-events:none}#progress-bar[data-astro-cid-mu6cnre2]{display:block;height:100%;width:0%;background:var(--accent);transition:width .1s linear}
+</style>
+<link rel="stylesheet" href="/uai-wiki-html/_astro/_slug_.DmvNEfVi.css"></head> <body data-astro-cid-37fxchfa> <header class="site-header" data-astro-cid-3ef6ksr2> <div class="wrap bar" data-astro-cid-3ef6ksr2> <a href="/uai-wiki-html/" class="brand" data-astro-cid-3ef6ksr2> <span class="brand-mark" data-astro-cid-3ef6ksr2>升</span> <span class="brand-text" data-astro-cid-3ef6ksr2>升職消化中</span> </a> <nav class="nav" aria-label="主導覽" data-astro-cid-3ef6ksr2> <a href="/uai-wiki-html/articles" class="nav-item on" aria-current="page" data-astro-cid-3ef6ksr2> <span class="nav-text" data-astro-cid-3ef6ksr2>讀</span> </a><a href="/uai-wiki-html/glossary" class="nav-item" data-astro-cid-3ef6ksr2> <span class="nav-text" data-astro-cid-3ef6ksr2>查</span> </a><a href="/uai-wiki-html/resources" class="nav-item" data-astro-cid-3ef6ksr2> <span class="nav-text" data-astro-cid-3ef6ksr2>找</span> </a> <button id="theme-toggle" class="theme-toggle" type="button" aria-label="切換深淺色" data-astro-cid-x3pjskd3> <span class="i-sun" data-astro-cid-x3pjskd3>☀︎</span><span class="i-moon" data-astro-cid-x3pjskd3>☾</span> </button>  <script type="module">document.getElementById("theme-toggle")?.addEventListener("click",()=>{const t=document.documentElement,e=t.getAttribute("data-theme")==="dark"?"light":"dark";t.setAttribute("data-theme",e);try{localStorage.setItem("theme",e)}catch{}});</script> </nav> </div> </header>  <main data-astro-cid-37fxchfa>  <div class="progress" aria-hidden="true" data-astro-cid-mu6cnre2><span id="progress-bar" data-astro-cid-mu6cnre2></span></div>  <script type="module">const n=document.getElementById("progress-bar");function t(){const e=document.documentElement,o=e.scrollTop/(e.scrollHeight-e.clientHeight||1);n&&(n.style.width=Math.min(100,Math.max(0,o*100))+"%")}document.addEventListener("scroll",t,{passive:!0});window.addEventListener("resize",t);t();</script> <div class="article-grid" data-astro-cid-zm77yjld> <!-- 桌機側邊章節導覽：捲到哪一段就亮哪一條。
+         長文捲到一半最怕「不知道自己在哪、還剩多少」——這是站層級的定位感。 --> <nav class="side-toc" aria-label="章節導覽" data-astro-cid-zm77yjld> <p class="side-toc-title" data-astro-cid-zm77yjld>這篇的段落</p> <ol data-astro-cid-zm77yjld> <li data-astro-cid-zm77yjld><a href="#一句話定義" data-toc-link="一句話定義" data-astro-cid-zm77yjld>一句話定義</a></li><li data-astro-cid-zm77yjld><a href="#這條法則從哪來" data-toc-link="這條法則從哪來" data-astro-cid-zm77yjld>這條法則從哪來</a></li><li data-astro-cid-zm77yjld><a href="#官方的五個實務結論" data-toc-link="官方的五個實務結論" data-astro-cid-zm77yjld>官方的五個實務結論</a></li><li data-astro-cid-zm77yjld><a href="#官方舉的三個例子" data-toc-link="官方舉的三個例子" data-astro-cid-zm77yjld>官方舉的三個例子</a></li><li data-astro-cid-zm77yjld><a href="#那條容易被忽略的界線別簡化到變抽象" data-toc-link="那條容易被忽略的界線別簡化到變抽象" data-astro-cid-zm77yjld>那條容易被忽略的界線：別簡化到變抽象</a></li><li data-astro-cid-zm77yjld><a href="#這條法則跟-fitts-定律的關係" data-toc-link="這條法則跟-fitts-定律的關係" data-astro-cid-zm77yjld>這條法則跟 Fitts 定律的關係</a></li><li data-astro-cid-zm77yjld><a href="#怎麼用在你的工作上" data-toc-link="怎麼用在你的工作上" data-astro-cid-zm77yjld>怎麼用在你的工作上</a></li><li data-astro-cid-zm77yjld><a href="#小結" data-toc-link="小結" data-astro-cid-zm77yjld>小結</a></li> </ol> </nav> <article class="reading" data-astro-cid-zm77yjld> <a href="/uai-wiki-html/articles" class="back" data-astro-cid-zm77yjld>← 全部文章</a> <div class="meta-top" data-astro-cid-zm77yjld> <span class="tag" style="background: color-mix(in srgb, var(--c2) 16%, transparent); border-color: var(--c2);" data-astro-cid-zm77yjld> UX 法則與心理學 </span> <span class="reading-time" data-astro-cid-zm77yjld>約 10 分鐘 · 更新 2026-08-07</span> </div> <h1 data-astro-cid-zm77yjld>Hick 定律：選項越多，人越慢</h1> <!-- TL;DR 先行：ADHD 友善，讓人先抓到重點再決定要不要細讀。
+           它是這頁的第二主角，所以視覺重量刻意比章節清單重。 --> <aside class="tldr" aria-label="重點摘要" data-astro-cid-zm77yjld> <p class="tldr-title" data-astro-cid-zm77yjld>先抓重點</p> <ul data-astro-cid-zm77yjld><li data-astro-cid-zm77yjld>做決定要花多久，會隨著「選項的數量」與「選項的複雜度」一起上升。</li><li data-astro-cid-zm77yjld>解法不是把功能刪掉，而是分階段揭露、把複雜任務拆成小步驟、幫使用者標出推薦選項。</li><li data-astro-cid-zm77yjld>但別簡化過頭——簡到看不懂在幹嘛，反而製造另一種困惑。</li></ul> </aside> <!-- 窄螢幕沒有側欄，章節清單改收在這裡（預設收合，不佔開頭版面） --> <details class="toc-inline" data-astro-cid-zm77yjld> <summary data-astro-cid-zm77yjld>這篇有 8 個段落</summary> <ol data-astro-cid-zm77yjld><li data-astro-cid-zm77yjld><a href="#一句話定義" data-astro-cid-zm77yjld>一句話定義</a></li><li data-astro-cid-zm77yjld><a href="#這條法則從哪來" data-astro-cid-zm77yjld>這條法則從哪來</a></li><li data-astro-cid-zm77yjld><a href="#官方的五個實務結論" data-astro-cid-zm77yjld>官方的五個實務結論</a></li><li data-astro-cid-zm77yjld><a href="#官方舉的三個例子" data-astro-cid-zm77yjld>官方舉的三個例子</a></li><li data-astro-cid-zm77yjld><a href="#那條容易被忽略的界線別簡化到變抽象" data-astro-cid-zm77yjld>那條容易被忽略的界線：別簡化到變抽象</a></li><li data-astro-cid-zm77yjld><a href="#這條法則跟-fitts-定律的關係" data-astro-cid-zm77yjld>這條法則跟 Fitts 定律的關係</a></li><li data-astro-cid-zm77yjld><a href="#怎麼用在你的工作上" data-astro-cid-zm77yjld>怎麼用在你的工作上</a></li><li data-astro-cid-zm77yjld><a href="#小結" data-astro-cid-zm77yjld>小結</a></li></ol> </details> <div class="prose" data-astro-cid-zm77yjld>  <h2 id="一句話定義">一句話定義</h2>
+<blockquote>
+<p><strong>做出決定所需的時間，會隨著選項的數量與複雜度增加而變長。</strong></p>
+<p>The time it takes to make a decision increases with the number and complexity of choices.</p>
+</blockquote>
+<p>注意兩個變數：<strong>數量</strong>和<strong>複雜度</strong>。不是只有「選項變多」會拖慢人，選項本身<strong>變難懂</strong>也會。</p>
+<p>這代表把 10 個選項砍成 5 個、但每個都寫得莫名其妙，並沒有比較好。</p>
+<h2 id="這條法則從哪來">這條法則從哪來</h2>
+<p>1952 年，英國心理學家 <strong>William Edmund Hick</strong> 與美國心理學家 <strong>Ray Hyman</strong> 合作研究「刺激的數量」與「反應時間」的關係（所以也叫 <strong>Hick-Hyman 定律</strong>）。</p>
+<p>結果不意外：<strong>可選的東西越多，人要花越久才決定要跟哪一個互動。</strong></p>
+<p>Laws of UX 官方對此有一句話講得很好：</p>
+<blockquote>
+<p>被大量選項轟炸的使用者，必須花時間去<strong>解讀</strong>和<strong>決定</strong>——這等於你<strong>塞了工作給他們，而他們並不想要</strong>。</p>
+</blockquote>
+<p>這句話值得記起來。因為設計師常把「提供很多選擇」當成貼心，但從使用者的角度，那是<strong>你把你的工作外包給他</strong>。</p>
+<h2 id="官方的五個實務結論">官方的五個實務結論</h2>
+<ol>
+<li><strong>反應時間很關鍵的場合，把選項降到最少</strong>，以縮短決策時間。</li>
+<li><strong>把複雜任務拆成小步驟</strong>，降低認知負荷。</li>
+<li><strong>標出推薦選項</strong>，避免使用者被淹沒。</li>
+<li><strong>用漸進式引導（progressive onboarding）</strong> 降低新手的認知負荷。</li>
+<li><strong>小心別簡化到變抽象</strong>——簡過頭一樣是問題。</li>
+</ol>
+<p>第 5 點是這條法則裡最常被忽略的一條，後面會單獨談。</p>
+<hr>
+<h2 id="官方舉的三個例子">官方舉的三個例子</h2>
+<h3 id="google-首頁">Google 首頁</h3>
+<p>Google 把「輸入關鍵字」這件事需要做的決定壓到最低——<strong>首頁上沒有任何會分散注意力、或需要額外決策的東西</strong>。</p>
+<p>一個搜尋框，一個游標。你不用決定「我該先點哪裡」。</p>
+<p>對照組是入口網站時代的 Yahoo 首頁：滿滿的分類、新聞、廣告。功能更多，但你要花更久才開始做你本來要做的事。</p>
+<h3 id="apple-tv-遙控器">Apple TV 遙控器</h3>
+<p>Apple TV 的遙控器按鍵極少，所以<strong>不需要動用多少工作記憶</strong>，認知負荷因此低很多。</p>
+<p>關鍵在於它的做法不是「刪掉功能」，而是——<strong>把複雜度轉移到電視畫面上</strong>。功能沒有變少，只是搬到一個「可以好好組織、可以分層展開」的地方。</p>
+<p>這是這條法則最重要的實作心法：<strong>複雜度不會消失，只能搬家。</strong> 你的工作是把它搬到適合承載它的地方。</p>
+<h3 id="slack-的漸進式引導">Slack 的漸進式引導</h3>
+<p>Slack 不是丟幾張引導頁然後把你扔進一個功能全開的 App。它用一個機器人（Slackbot）陪你聊天，讓你在<strong>沒有後果</strong>的情況下學會「傳訊息」這件事。</p>
+<p>新手階段，<strong>除了訊息輸入框以外的功能全部藏起來</strong>。等你學會傳訊息，才逐步把其他功能介紹給你。</p>
+<hr>
+<h2 id="那條容易被忽略的界線別簡化到變抽象">那條容易被忽略的界線：別簡化到變抽象</h2>
+<p>這是 Hick 定律最常被誤用的地方。</p>
+<p>設計師讀完這條法則，很容易得出「選項越少越好」的結論，然後開始砍。砍到最後變成：</p>
+<ul>
+<li>圖示沒有文字標籤（「這個三條線是什麼？」）</li>
+<li>選單只剩三項，但每項都叫「更多」「其他」「設定」</li>
+<li>為了畫面乾淨，把重要功能藏進三層選單</li>
+</ul>
+<p>這些都減少了<strong>當下看到的選項數</strong>，但<strong>沒有減少認知負荷</strong>——只是把負荷從「選擇」轉成「猜測」和「尋找」。</p>
+<p><strong>判準</strong>：如果使用者要停下來想「這是什麼意思」，你就簡化過頭了。Hick 定律要消除的是<strong>選擇的成本</strong>，不是<strong>理解的線索</strong>。</p>
+<h2 id="這條法則跟-fitts-定律的關係">這條法則跟 Fitts 定律的關係</h2>
+<p>它們常常一起出現，但管的是不同階段：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>法則</th><th>管的是</th></tr></thead><tbody><tr><td><strong>Hick</strong></td><td>使用者<strong>決定要點哪個</strong>所花的時間</td></tr><tr><td><strong>Fitts</strong></td><td>使用者<strong>實際移動去點</strong>所花的時間</td></tr></tbody></table>
+<p>所以一個順手的介面要兩條都顧到：選項不要太多（Hick），而該點的那個要夠大夠近（Fitts）。</p>
+<p>只做 Fitts 不做 Hick，你會做出一堆又大又好按、但使用者不知道該按哪個的按鈕。</p>
+<hr>
+<h2 id="怎麼用在你的工作上">怎麼用在你的工作上</h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> 這個畫面上，使用者<strong>真正要做的那一件事</strong>是什麼？其他東西有沒有在干擾它？</li>
+<li class="task-list-item"><input type="checkbox" disabled> 有沒有哪個地方一次丟出 7 個以上同等權重的選項？能不能<strong>分組</strong>或<strong>分階段</strong>？</li>
+<li class="task-list-item"><input type="checkbox" disabled> 有沒有標出<strong>推薦／最常用</strong>的那一個？（例如方案頁的「最多人選」）</li>
+<li class="task-list-item"><input type="checkbox" disabled> 複雜的表單有沒有拆成多步驟？還是一次要求填 20 欄？</li>
+<li class="task-list-item"><input type="checkbox" disabled> 新手第一次進來，看到的是<strong>全功能</strong>還是<strong>簡化版</strong>？</li>
+<li class="task-list-item"><input type="checkbox" disabled> 反向檢查：有沒有為了畫面乾淨，<strong>把重要功能藏到找不到</strong>？</li>
+<li class="task-list-item"><input type="checkbox" disabled> 有沒有哪個圖示沒有文字標籤，需要使用者用猜的？</li>
+</ul>
+<h3 id="跟同事溝通會用到的說法">跟同事溝通會用到的說法</h3>
+<p>當 PM 要在首頁再塞一個入口時：</p>
+<blockquote>
+<p>每加一個選項，所有使用者做決定的時間都會變長——不只是想用新功能的那些人。這是 1952 年就量測過的關係。我們可以加，但要想清楚它值不值得讓<strong>所有人</strong>慢下來。</p>
+</blockquote>
+<p>當有人說「使用者想要更多選擇」時：</p>
+<blockquote>
+<p>使用者說想要選擇，但行為研究顯示他們在選項多的時候反而更難決定、更容易放棄。與其給更多選項，不如給<strong>更好的預設值</strong>和<strong>推薦</strong>。</p>
+</blockquote>
+<hr>
+<h2 id="小結">小結</h2>
+<p>Hick 定律真正在講的不是「選項越少越好」，而是：<strong>每一個你放上去的選項，都在跟使用者收一筆稅。</strong></p>
+<p>你可以收這筆稅，但要確定它換得回等值的東西。</p>
+<hr>
+<blockquote>
+<p><strong>還沒解鎖</strong>：這條法則的數學形式（反應時間與選項數的對數關係）與它在認知心理學裡的定位，本篇沒有展開。之後若要深入，會另外開一篇談原理。</p>
+</blockquote>
+<p><em>這是「UX 法則與心理學」主題的文章。本篇譯自並改寫自 Laws of UX 官方免費全文，作者 Jon Yablonski 維護該站全文公開。</em></p>  </div> <!-- 出處：每篇必標 --> <footer class="sources" data-astro-cid-zm77yjld> <p class="sources-title" data-astro-cid-zm77yjld>出處</p> <ul data-astro-cid-zm77yjld> <li data-astro-cid-zm77yjld> <span class="src-note" data-astro-cid-zm77yjld>譯自官方免費全文</span> <a href="https://lawsofux.com/hicks-law/" target="_blank" rel="noopener noreferrer" data-astro-cid-zm77yjld>Laws of UX — Hick&#39;s Law（Jon Yablonski）</a> </li><li data-astro-cid-zm77yjld> <span class="src-note" data-astro-cid-zm77yjld>中譯本書目</span> <span data-astro-cid-zm77yjld>《使用者體驗法則 第二版》Jon Yablonski 著／盧仙萍 譯／歐萊禮</span> </li><li data-astro-cid-zm77yjld> <span class="src-note" data-astro-cid-zm77yjld>原始研究出處</span> <a href="https://en.wikipedia.org/wiki/Hick%27s_law" target="_blank" rel="noopener noreferrer" data-astro-cid-zm77yjld>William Edmund Hick &amp; Ray Hyman (1952)</a> </li> </ul> </footer> </article> </div> <script type="module">const n=document.querySelectorAll("[data-toc-link]");if(n.length){const o=new Map;n.forEach(e=>{const t=document.getElementById(e.getAttribute("data-toc-link"));t&&o.set(t,e)});const c=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&(n.forEach(s=>s.classList.remove("on")),o.get(t.target)?.classList.add("on"))})},{rootMargin:"-10% 0px -80% 0px"});o.forEach((e,t)=>c.observe(t))}</script>   </main> <footer class="site-footer" data-astro-cid-37fxchfa> <div class="wrap" data-astro-cid-37fxchfa> <p data-astro-cid-37fxchfa>升職消化中 · 個人 UI/UX ＋ AI 學習庫。內容為學習消化用途，出處標於各文章底部。</p> </div> </footer>  </body> </html>

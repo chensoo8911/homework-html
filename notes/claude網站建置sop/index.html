@@ -1,0 +1,106 @@
+<!DOCTYPE html><html lang="zh-Hant" data-astro-cid-37fxchfa> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="一個給自己用的 UI/UX ＋ AI 學習站"><link rel="icon" href="/uai-wiki-html/favicon.svg" type="image/svg+xml"><title>Claude Code 網站建置SOP｜筆記｜升職消化中</title><!-- 主題初始化：在畫面繪製前決定深淺色，避免閃爍 --><script>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+      })();
+    </script><link rel="stylesheet" href="/uai-wiki-html/_astro/_slug_.3ZshJw83.css">
+<style>.progress[data-astro-cid-mu6cnre2]{position:fixed;inset:0 0 auto;height:4px;z-index:60;background:transparent;pointer-events:none}#progress-bar[data-astro-cid-mu6cnre2]{display:block;height:100%;width:0%;background:var(--accent);transition:width .1s linear}
+.article-grid[data-astro-cid-5eggoaxc]{max-width:68rem;margin:0 auto;padding:0 1.5rem}.reading[data-astro-cid-5eggoaxc]{max-width:var(--font-reading-width);margin:0 auto}.back[data-astro-cid-5eggoaxc]{display:inline-block;margin-bottom:1.5rem;color:var(--muted);text-decoration:none;font-size:.9rem}.back[data-astro-cid-5eggoaxc]:hover{color:var(--accent)}.meta-top[data-astro-cid-5eggoaxc]{display:flex;flex-wrap:wrap;align-items:center;gap:.8rem;margin-bottom:.8rem}.date[data-astro-cid-5eggoaxc]{color:var(--muted);font-size:.88rem}.note-hint[data-astro-cid-5eggoaxc]{color:var(--muted);font-size:.92rem;border-left:2px solid var(--line);padding-left:.9rem;margin:0 0 2rem}.side-toc[data-astro-cid-5eggoaxc]{display:none}@media(min-width:1100px){.article-grid[data-astro-cid-5eggoaxc]{display:grid;grid-template-columns:13rem minmax(0,var(--font-reading-width));gap:4rem;justify-content:center;align-items:start}.reading[data-astro-cid-5eggoaxc]{margin:0}.side-toc[data-astro-cid-5eggoaxc]{display:block;position:sticky;top:6rem;padding-top:4.5rem}}.side-toc-title[data-astro-cid-5eggoaxc]{font-size:.78rem;letter-spacing:.1em;color:var(--muted);margin:0 0 .8rem}.side-toc[data-astro-cid-5eggoaxc] ol[data-astro-cid-5eggoaxc]{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}.side-toc[data-astro-cid-5eggoaxc] a[data-astro-cid-5eggoaxc]{display:block;padding:.45rem .9rem;margin-left:-2px;border-left:2px solid transparent;color:var(--muted);text-decoration:none;font-size:.88rem;line-height:1.45}.side-toc[data-astro-cid-5eggoaxc] a[data-astro-cid-5eggoaxc]:hover{color:var(--ink)}.side-toc[data-astro-cid-5eggoaxc] a[data-astro-cid-5eggoaxc].on{color:var(--ink);font-weight:600;border-left-color:var(--accent)}.prose[data-astro-cid-5eggoaxc]{margin-top:2.5rem}.prose[data-astro-cid-5eggoaxc] h2{scroll-margin-top:5rem;padding-top:1.5em;border-top:1px solid var(--line)}.prose[data-astro-cid-5eggoaxc] h2:first-child{border-top:none;padding-top:0;margin-top:0}.prose[data-astro-cid-5eggoaxc] strong{color:var(--ink);font-weight:700}.prose[data-astro-cid-5eggoaxc] img{max-width:100%;height:auto;border-radius:var(--radius)}.prose[data-astro-cid-5eggoaxc] blockquote{margin:1.8em 0;padding:1em 1.4em;border-left:3px solid var(--accent);color:var(--ink-soft);background:var(--bg-card);border-radius:0 8px 8px 0}.prose[data-astro-cid-5eggoaxc] blockquote p:last-child{margin-bottom:0}.prose[data-astro-cid-5eggoaxc] code{background:var(--bg-card);padding:.1em .4em;border-radius:5px;font-size:.9em}.prose[data-astro-cid-5eggoaxc] pre{padding:1rem 1.2rem;border-radius:var(--radius);overflow-x:auto;border:1px solid var(--line)}.prose[data-astro-cid-5eggoaxc] hr{border:none;border-top:1px solid var(--line);margin:3em 0}.prose[data-astro-cid-5eggoaxc] ul,.prose[data-astro-cid-5eggoaxc] ol{padding-left:1.4rem;margin:0 0 1.5em}.prose[data-astro-cid-5eggoaxc] li{margin:.6em 0}.prose[data-astro-cid-5eggoaxc] table{width:100%;border-collapse:collapse;margin:1.8em 0;font-size:.95rem;line-height:1.7;display:block;overflow-x:auto}.prose[data-astro-cid-5eggoaxc] th,.prose[data-astro-cid-5eggoaxc] td{padding:.7em 1em;text-align:left;border-bottom:1px solid var(--line)}.prose[data-astro-cid-5eggoaxc] th{font-size:.82rem;letter-spacing:.06em;color:var(--muted);font-weight:600;border-bottom-width:2px}.prose[data-astro-cid-5eggoaxc] tbody tr:nth-child(2n){background:var(--bg-card)}.prose[data-astro-cid-5eggoaxc] .dead-link{color:var(--muted);border-bottom:1px dotted var(--muted);cursor:help}.origin[data-astro-cid-5eggoaxc]{margin-top:4rem;padding-top:1.5rem;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}.origin[data-astro-cid-5eggoaxc] p[data-astro-cid-5eggoaxc]{margin:0 0 .4em}.origin[data-astro-cid-5eggoaxc] code[data-astro-cid-5eggoaxc]{background:var(--bg-card);padding:.15em .5em;border-radius:5px;font-size:.95em}
+</style></head> <body data-astro-cid-37fxchfa> <header class="site-header" data-astro-cid-3ef6ksr2> <div class="wrap bar" data-astro-cid-3ef6ksr2> <a href="/uai-wiki-html/" class="brand" data-astro-cid-3ef6ksr2> <span class="brand-mark" data-astro-cid-3ef6ksr2>升</span> <span class="brand-text" data-astro-cid-3ef6ksr2>升職消化中</span> </a> <nav class="nav" aria-label="主導覽" data-astro-cid-3ef6ksr2> <a href="/uai-wiki-html/articles" class="nav-item" data-astro-cid-3ef6ksr2> <span class="nav-text" data-astro-cid-3ef6ksr2>讀</span> </a><a href="/uai-wiki-html/glossary" class="nav-item on" aria-current="page" data-astro-cid-3ef6ksr2> <span class="nav-text" data-astro-cid-3ef6ksr2>查</span> </a><a href="/uai-wiki-html/resources" class="nav-item" data-astro-cid-3ef6ksr2> <span class="nav-text" data-astro-cid-3ef6ksr2>找</span> </a> <button id="theme-toggle" class="theme-toggle" type="button" aria-label="切換深淺色" data-astro-cid-x3pjskd3> <span class="i-sun" data-astro-cid-x3pjskd3>☀︎</span><span class="i-moon" data-astro-cid-x3pjskd3>☾</span> </button>  <script type="module">document.getElementById("theme-toggle")?.addEventListener("click",()=>{const t=document.documentElement,e=t.getAttribute("data-theme")==="dark"?"light":"dark";t.setAttribute("data-theme",e);try{localStorage.setItem("theme",e)}catch{}});</script> </nav> </div> </header>  <main data-astro-cid-37fxchfa>  <div class="progress" aria-hidden="true" data-astro-cid-mu6cnre2><span id="progress-bar" data-astro-cid-mu6cnre2></span></div>  <script type="module">const n=document.getElementById("progress-bar");function t(){const e=document.documentElement,o=e.scrollTop/(e.scrollHeight-e.clientHeight||1);n&&(n.style.width=Math.min(100,Math.max(0,o*100))+"%")}document.addEventListener("scroll",t,{passive:!0});window.addEventListener("resize",t);t();</script> <div class="article-grid" data-astro-cid-5eggoaxc> <nav class="side-toc" aria-label="章節導覽" data-astro-cid-5eggoaxc> <p class="side-toc-title" data-astro-cid-5eggoaxc>這篇的段落</p> <ol data-astro-cid-5eggoaxc><li data-astro-cid-5eggoaxc><a href="#事前準備" data-toc-link="事前準備" data-astro-cid-5eggoaxc>事前準備</a></li><li data-astro-cid-5eggoaxc><a href="#步驟-0建-claudemd" data-toc-link="步驟-0建-claudemd" data-astro-cid-5eggoaxc>步驟 0：建 CLAUDE.md</a></li><li data-astro-cid-5eggoaxc><a href="#步驟-1準備品牌資產下第一個提示詞" data-toc-link="步驟-1準備品牌資產下第一個提示詞" data-astro-cid-5eggoaxc>步驟 1：準備品牌資產＋下第一個提示詞</a></li><li data-astro-cid-5eggoaxc><a href="#步驟-2設定截圖迴圈screenshot-loop" data-toc-link="步驟-2設定截圖迴圈screenshot-loop" data-astro-cid-5eggoaxc>步驟 2：設定截圖迴圈（Screenshot Loop）</a></li><li data-astro-cid-5eggoaxc><a href="#步驟-3拿別的網站當範本整頁複製" data-toc-link="步驟-3拿別的網站當範本整頁複製" data-astro-cid-5eggoaxc>步驟 3：拿別的網站當範本（整頁複製）</a></li><li data-astro-cid-5eggoaxc><a href="#步驟-4借用單一元件局部靈感" data-toc-link="步驟-4借用單一元件局部靈感" data-astro-cid-5eggoaxc>步驟 4：借用單一元件（局部靈感）</a></li><li data-astro-cid-5eggoaxc><a href="#步驟-5上線部署" data-toc-link="步驟-5上線部署" data-astro-cid-5eggoaxc>步驟 5：上線部署</a></li><li data-astro-cid-5eggoaxc><a href="#額外注意事項" data-toc-link="額外注意事項" data-astro-cid-5eggoaxc>額外注意事項</a></li></ol> </nav> <article class="reading" data-astro-cid-5eggoaxc> <a href="/uai-wiki-html/notes" class="back" data-astro-cid-5eggoaxc>← 全部筆記</a> <div class="meta-top" data-astro-cid-5eggoaxc> <span class="tag" data-astro-cid-5eggoaxc>AI與Claude工具</span> <span class="date" data-astro-cid-5eggoaxc>記於 2026-07-16</span> </div> <h1 data-astro-cid-5eggoaxc>Claude Code 網站建置SOP</h1>  <div class="prose" data-astro-cid-5eggoaxc> <blockquote>
+<p>來源：YouTube 影片筆記整理（2026-07-16）　用途：用 Claude Code 做出有品牌感、不像 AI 隨手生成的網站
+逐步操作版，重點摘要見 <a href="/uai-wiki-html/notes/claude%E5%BB%BA%E7%AB%99%E5%93%81%E7%89%8C%E6%84%9F%E6%8A%80%E5%B7%A7">Claude建站品牌感技巧</a>（同一支影片的濃縮筆記）。</p>
+</blockquote>
+<h2 id="事前準備">事前準備</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>工具</th><th>用途</th></tr></thead><tbody><tr><td>VS Code</td><td>寫程式碼的編輯器</td></tr><tr><td>Claude Code（VS Code 擴充套件）</td><td>需要 Pro/Max 訂閱</td></tr><tr><td>frontend-design skill</td><td>官方 plugin，已裝好，前端設計自動更專業</td></tr><tr><td>Puppeteer</td><td>讓 AI 自動截圖比對瀏覽器畫面</td></tr><tr><td>GitHub</td><td>存放程式碼、版本控制</td></tr><tr><td>Vercel</td><td>接 GitHub 自動部署成正式網站</td></tr><tr><td>21st.dev / Dribbble / Godly / Awwwards</td><td>找網站視覺靈感</td></tr></tbody></table>
+<h2 id="步驟-0建-claudemd">步驟 0：建 CLAUDE.md</h2>
+<p>專案資料夾裡放一份 CLAUDE.md，當作這個網站專案的「系統提示詞」。內容要精簡，寫清楚：</p>
+<ul>
+<li>這個專案的目標與風格方向</li>
+<li>「每次寫前端程式碼前，一定要先呼叫 frontend-design skill，沒有例外」</li>
+<li>截圖工作流程規則（見步驟2）</li>
+<li>品牌資產放在哪個資料夾（見下方）</li>
+</ul>
+<p>這份檔案不是一次寫完，做的過程中會一直回來補。</p>
+<h2 id="步驟-1準備品牌資產下第一個提示詞">步驟 1：準備品牌資產＋下第一個提示詞</h2>
+<ol>
+<li>建一個 <code>brand_assets</code> 資料夾，放進去：Logo、品牌規範文件（色票、字體、圖示）</li>
+<li>跟 Claude Code 說：「幫我做一個現代、專業的[品牌名]形象頁，這是我的 Logo 和品牌規範」</li>
+<li>在對話框打 <code>@</code> 可以直接標記指定檔案給它看，避免檔名不直覺被忽略</li>
+<li>因為已經裝了 frontend-design skill，Claude Code 會自動呼叫它來生成排版/動效</li>
+</ol>
+<h2 id="步驟-2設定截圖迴圈screenshot-loop">步驟 2：設定截圖迴圈（Screenshot Loop）</h2>
+<p>在 CLAUDE.md 裡跟 Claude Code 說「幫我用 Puppeteer 設定截圖流程」，它會自己裝好工具。之後每次建站，它會自動：</p>
+<ol>
+<li>寫程式碼 → 開本機伺服器</li>
+<li>截圖比對「做出來的樣子」跟「你要的樣子」</li>
+<li>抓落差、修正、再截圖，重複兩輪左右</li>
+</ol>
+<p>⚠️ <strong>注意</strong>：遇到動態背景動畫的區塊，截圖比對容易卡住（AI 一直覺得沒做好、越改越糟）。這種情況直接跟它說：「這段不要用截圖工具比對，直接改程式碼就好」。</p>
+<h2 id="步驟-3拿別的網站當範本整頁複製">步驟 3：拿別的網站當範本（整頁複製）</h2>
+<ol>
+<li>找到喜歡的參考網站</li>
+<li>瀏覽器開發者工具（Mac 版功能位置需自行查詢對應鍵位）截一張全頁截圖</li>
+<li>到 Elements 面板複製它的 CSS 樣式碼</li>
+<li>把「截圖＋樣式碼」一起丟給 Claude Code：「照這個做一個一樣的網站」</li>
+<li>做出來的架子滿意後，再叫它套用你自己的品牌色/Logo/文案：「用我的 brand_assets 裡的色系跟 Logo，把這個複製版換成我們的風格」</li>
+</ol>
+<h2 id="步驟-4借用單一元件局部靈感">步驟 4：借用單一元件（局部靈感）</h2>
+<p>不用整頁複製，只针對單一元件（按鈕特效、背景動畫）：</p>
+<ol>
+<li>去 21st.dev 找喜歡的元件，複製它給的程式碼片段</li>
+<li>跟 Claude Code 說：「把這段效果套進[某個區塊]」＋貼上程式碼片段</li>
+</ol>
+<h2 id="步驟-5上線部署">步驟 5：上線部署</h2>
+<ol>
+<li>GitHub 建一個新 repo</li>
+<li>跟 Claude Code 說：「把這個專案 push 到 GitHub repo [repo名]」（它會處理登入授權、.gitignore）</li>
+<li>去 Vercel.com 用 GitHub 帳號登入 → Add New Project → 選剛剛那個 repo → Deploy</li>
+<li>之後每次要正式更新網站：<strong>先在本機（localhost）測試滿意</strong>，才明確跟 Claude Code 說「push 到 GitHub」——GitHub 更新後 Vercel 會自動抓去部署，不用手動操作</li>
+</ol>
+<p>⚠️ <strong>注意</strong>：CLAUDE.md 裡要寫清楚「除非我明確說 push/commit，否則不要自動推上 GitHub」，避免壞版本自動上線。</p>
+<h2 id="額外注意事項">額外注意事項</h2>
+<ul>
+<li>影片中示範用「bypass permissions mode」（跳過權限確認）加速流程，這是<strong>危險模式</strong>，會讓 AI 不經確認就執行任何指令。要開的話務必全程留在電腦前盯著，不要放著跑一整晚。</li>
+<li>大型改動（從零建站、整頁複製）花的時間較長；已有雛形後的小修改很快。</li>
+</ul>
+ </div> <!-- 筆記沒有外部出處，改標「這篇的本體在哪」——要改內容是去改學習庫，不是改網站 --> <footer class="origin" data-astro-cid-5eggoaxc> <p data-astro-cid-5eggoaxc>這是從學習庫同步過來的個人筆記。</p> <p class="path" data-astro-cid-5eggoaxc><code data-astro-cid-5eggoaxc>1_UIAI學習庫/知識庫/AI與Claude工具/Claude網站建置SOP.md</code></p> </footer> </article> </div> <script type="module">const n=document.querySelectorAll("[data-toc-link]");if(n.length){const o=new Map;n.forEach(e=>{const t=document.getElementById(e.getAttribute("data-toc-link"));t&&o.set(t,e)});const c=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&(n.forEach(s=>s.classList.remove("on")),o.get(t.target)?.classList.add("on"))})},{rootMargin:"-10% 0px -80% 0px"});o.forEach((e,t)=>c.observe(t))}</script>   </main> <footer class="site-footer" data-astro-cid-37fxchfa> <div class="wrap" data-astro-cid-37fxchfa> <p data-astro-cid-37fxchfa>升職消化中 · 個人 UI/UX ＋ AI 學習庫。內容為學習消化用途，出處標於各文章底部。</p> </div> </footer>  </body> </html>

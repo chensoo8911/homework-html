@@ -1,0 +1,79 @@
+<!DOCTYPE html><html lang="zh-Hant" data-astro-cid-37fxchfa> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="一個給自己用的 UI/UX ＋ AI 學習站"><link rel="icon" href="/uai-wiki-html/favicon.svg" type="image/svg+xml"><title>Material Design 3 是什麼？認識 Google 的設計系統｜升職消化中</title><!-- 主題初始化：在畫面繪製前決定深淺色，避免閃爍 --><script>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+      })();
+    </script><link rel="stylesheet" href="/uai-wiki-html/_astro/_slug_.3ZshJw83.css">
+<style>.progress[data-astro-cid-mu6cnre2]{position:fixed;inset:0 0 auto;height:4px;z-index:60;background:transparent;pointer-events:none}#progress-bar[data-astro-cid-mu6cnre2]{display:block;height:100%;width:0%;background:var(--accent);transition:width .1s linear}
+</style>
+<link rel="stylesheet" href="/uai-wiki-html/_astro/_slug_.DmvNEfVi.css"></head> <body data-astro-cid-37fxchfa> <header class="site-header" data-astro-cid-3ef6ksr2> <div class="wrap bar" data-astro-cid-3ef6ksr2> <a href="/uai-wiki-html/" class="brand" data-astro-cid-3ef6ksr2> <span class="brand-mark" data-astro-cid-3ef6ksr2>升</span> <span class="brand-text" data-astro-cid-3ef6ksr2>升職消化中</span> </a> <nav class="nav" aria-label="主導覽" data-astro-cid-3ef6ksr2> <a href="/uai-wiki-html/articles" class="nav-item on" aria-current="page" data-astro-cid-3ef6ksr2> <span class="nav-text" data-astro-cid-3ef6ksr2>讀</span> </a><a href="/uai-wiki-html/glossary" class="nav-item" data-astro-cid-3ef6ksr2> <span class="nav-text" data-astro-cid-3ef6ksr2>查</span> </a><a href="/uai-wiki-html/resources" class="nav-item" data-astro-cid-3ef6ksr2> <span class="nav-text" data-astro-cid-3ef6ksr2>找</span> </a> <button id="theme-toggle" class="theme-toggle" type="button" aria-label="切換深淺色" data-astro-cid-x3pjskd3> <span class="i-sun" data-astro-cid-x3pjskd3>☀︎</span><span class="i-moon" data-astro-cid-x3pjskd3>☾</span> </button>  <script type="module">document.getElementById("theme-toggle")?.addEventListener("click",()=>{const t=document.documentElement,e=t.getAttribute("data-theme")==="dark"?"light":"dark";t.setAttribute("data-theme",e);try{localStorage.setItem("theme",e)}catch{}});</script> </nav> </div> </header>  <main data-astro-cid-37fxchfa>  <div class="progress" aria-hidden="true" data-astro-cid-mu6cnre2><span id="progress-bar" data-astro-cid-mu6cnre2></span></div>  <script type="module">const n=document.getElementById("progress-bar");function t(){const e=document.documentElement,o=e.scrollTop/(e.scrollHeight-e.clientHeight||1);n&&(n.style.width=Math.min(100,Math.max(0,o*100))+"%")}document.addEventListener("scroll",t,{passive:!0});window.addEventListener("resize",t);t();</script> <div class="article-grid" data-astro-cid-zm77yjld> <!-- 桌機側邊章節導覽：捲到哪一段就亮哪一條。
+         長文捲到一半最怕「不知道自己在哪、還剩多少」——這是站層級的定位感。 --> <nav class="side-toc" aria-label="章節導覽" data-astro-cid-zm77yjld> <p class="side-toc-title" data-astro-cid-zm77yjld>這篇的段落</p> <ol data-astro-cid-zm77yjld> <li data-astro-cid-zm77yjld><a href="#m3-是什麼" data-toc-link="m3-是什麼" data-astro-cid-zm77yjld>M3 是什麼</a></li><li data-astro-cid-zm77yjld><a href="#2026-的主角m3-expressive" data-toc-link="2026-的主角m3-expressive" data-astro-cid-zm77yjld>2026 的主角：M3 Expressive</a></li><li data-astro-cid-zm77yjld><a href="#m3-的核心五塊" data-toc-link="m3-的核心五塊" data-astro-cid-zm77yjld>M3 的核心五塊</a></li><li data-astro-cid-zm77yjld><a href="#給設計師的實用提醒" data-toc-link="給設計師的實用提醒" data-astro-cid-zm77yjld>給設計師的實用提醒</a></li> </ol> </nav> <article class="reading" data-astro-cid-zm77yjld> <a href="/uai-wiki-html/articles" class="back" data-astro-cid-zm77yjld>← 全部文章</a> <div class="meta-top" data-astro-cid-zm77yjld> <span class="tag" style="background: color-mix(in srgb, var(--c1) 16%, transparent); border-color: var(--c1);" data-astro-cid-zm77yjld> 設計系統 </span> <span class="reading-time" data-astro-cid-zm77yjld>約 5 分鐘 · 更新 2026-07-23</span> </div> <h1 data-astro-cid-zm77yjld>Material Design 3 是什麼？認識 Google 的設計系統</h1> <!-- TL;DR 先行：ADHD 友善，讓人先抓到重點再決定要不要細讀。
+           它是這頁的第二主角，所以視覺重量刻意比章節清單重。 --> <aside class="tldr" aria-label="重點摘要" data-astro-cid-zm77yjld> <p class="tldr-title" data-astro-cid-zm77yjld>先抓重點</p> <ul data-astro-cid-zm77yjld><li data-astro-cid-zm77yjld>M3 是 Google 的開源設計系統，用來做好看又好用的產品，跨 Android／Compose／Flutter／Web。</li><li data-astro-cid-zm77yjld>2026 主打『M3 Expressive』：用情緒設計，同時提升好用度與吸引力。</li><li data-astro-cid-zm77yjld>核心五塊：色彩、動態、元件、字體、形狀；動態改走 token 驅動的物理系統。</li></ul> </aside> <!-- 窄螢幕沒有側欄，章節清單改收在這裡（預設收合，不佔開頭版面） --> <details class="toc-inline" data-astro-cid-zm77yjld> <summary data-astro-cid-zm77yjld>這篇有 4 個段落</summary> <ol data-astro-cid-zm77yjld><li data-astro-cid-zm77yjld><a href="#m3-是什麼" data-astro-cid-zm77yjld>M3 是什麼</a></li><li data-astro-cid-zm77yjld><a href="#2026-的主角m3-expressive" data-astro-cid-zm77yjld>2026 的主角：M3 Expressive</a></li><li data-astro-cid-zm77yjld><a href="#m3-的核心五塊" data-astro-cid-zm77yjld>M3 的核心五塊</a></li><li data-astro-cid-zm77yjld><a href="#給設計師的實用提醒" data-astro-cid-zm77yjld>給設計師的實用提醒</a></li></ol> </details> <div class="prose" data-astro-cid-zm77yjld>  <h2 id="m3-是什麼">M3 是什麼</h2>
+<blockquote>
+<p>“Material Design 3 is Google’s open-source design system for building beautiful, usable products.”
+（M3 是 Google 的開源設計系統，用來打造好看又好用的產品。）</p>
+</blockquote>
+<p>如果說 <a href="./apple-hig-core">Apple HIG</a> 是 Apple 陣營的設計聖經，那 <strong>Material Design 就是 Google 陣營的</strong>。差別是：Material <strong>開源</strong>，而且<strong>跨平台</strong>——Android、Jetpack Compose、Flutter、Web 都能用。</p>
+<p>Material 官方對自己的定義是：</p>
+<blockquote>
+<p>一套<strong>可調整的</strong>指南、元件與工具，讓設計師與工程師的協作更順暢。</p>
+</blockquote>
+<h2 id="2026-的主角m3-expressive">2026 的主角：M3 Expressive</h2>
+<p>M3 現在最主打的是 <strong>M3 Expressive（富表現力）</strong>，核心論點一句話：</p>
+<blockquote>
+<p><strong>用情緒設計，能同時提升「好用度」與「渴望度」（usability and desire）。</strong></p>
+</blockquote>
+<p>白話：好看不只是好看，帶有情緒的設計會讓人<strong>更會用、也更想用</strong>。它的做法是加入更鮮明的色彩、更生動的動態、更多元件與字體選擇。</p>
+<h3 id="expressive-帶來的新東西">Expressive 帶來的新東西</h3>
+<ul>
+<li><strong>Motion physics（動態物理）</strong>：改成用 <strong>token 驅動</strong>、更好實作的物理動態系統，轉場更自然也更好客製。</li>
+<li><strong>形狀庫擴充</strong>：新增 <strong>35 種形狀</strong>，還內建「形狀變形」動畫。</li>
+<li><strong>14 個新／更新元件</strong>：像 Toolbars、Split button、Button groups、Progress indicators 等。</li>
+<li><strong>Compose-first</strong>：Android 端主推 Jetpack Compose。</li>
+</ul>
+<h2 id="m3-的核心五塊">M3 的核心五塊</h2>
+<p>這是你認識任何設計系統都該先抓的骨架：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>概念</th><th>一句話</th></tr></thead><tbody><tr><td>Color 色彩</td><td>鮮明活潑的色彩系統</td></tr><tr><td>Motion 動態</td><td>直覺、token 驅動的物理動態</td></tr><tr><td>Components 元件</td><td>可自適應（adaptive）的元件</td></tr><tr><td>Typography 字體</td><td>有彈性的字體排版</td></tr><tr><td>Shape 形狀</td><td>具對比的形狀，可變形</td></tr></tbody></table>
+<p>而整個文件的分類骨架是四大塊：<strong>Foundations（基礎）／Styles（樣式）／Components（元件）／Develop（開發）</strong>。逛官方站時照這個分類找，就不會迷路。</p>
+<h2 id="給設計師的實用提醒">給設計師的實用提醒</h2>
+<ul>
+<li>官方提供 <strong>Figma 版 M3 Design Kit</strong>（含最新 Expressive 元件），可以直接套用，不用從零畫。</li>
+<li>因為 M3 是<strong>開源跨平台</strong>，你在 Figma 定的設計，工程師能直接對應到 Compose／Flutter／Web 的元件，協作落差小。</li>
+</ul>
+<blockquote>
+<p>小註記：M2 時代常聽到的「Dynamic Color／Material You」概念，在目前官方首頁沒有直接對應的原文佐證，本篇因此不展開；之後若要深入，會另外查 Color 子頁再補。</p>
+</blockquote>
+<hr>
+<p><em>這是「設計系統」主題的文章之一。內容摘要自 Material Design 3 官方文件（2026 現行版，含 M3 Expressive）。</em></p>  </div> <!-- 出處：每篇必標 --> <footer class="sources" data-astro-cid-zm77yjld> <p class="sources-title" data-astro-cid-zm77yjld>出處</p> <ul data-astro-cid-zm77yjld> <li data-astro-cid-zm77yjld> <span class="src-note" data-astro-cid-zm77yjld>摘要自官方文件</span> <a href="https://m3.material.io/" target="_blank" rel="noopener noreferrer" data-astro-cid-zm77yjld>Material Design 3 — 官方首頁</a> </li><li data-astro-cid-zm77yjld> <span class="src-note" data-astro-cid-zm77yjld>摘要自官方文件</span> <a href="https://m3.material.io/blog/building-with-m3-expressive" target="_blank" rel="noopener noreferrer" data-astro-cid-zm77yjld>Material Design — Building with M3 Expressive（官方部落格）</a> </li> </ul> </footer> </article> </div> <script type="module">const n=document.querySelectorAll("[data-toc-link]");if(n.length){const o=new Map;n.forEach(e=>{const t=document.getElementById(e.getAttribute("data-toc-link"));t&&o.set(t,e)});const c=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&(n.forEach(s=>s.classList.remove("on")),o.get(t.target)?.classList.add("on"))})},{rootMargin:"-10% 0px -80% 0px"});o.forEach((e,t)=>c.observe(t))}</script>   </main> <footer class="site-footer" data-astro-cid-37fxchfa> <div class="wrap" data-astro-cid-37fxchfa> <p data-astro-cid-37fxchfa>升職消化中 · 個人 UI/UX ＋ AI 學習庫。內容為學習消化用途，出處標於各文章底部。</p> </div> </footer>  </body> </html>

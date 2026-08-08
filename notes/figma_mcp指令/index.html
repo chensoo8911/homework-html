@@ -1,0 +1,63 @@
+<!DOCTYPE html><html lang="zh-Hant" data-astro-cid-37fxchfa> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="一個給自己用的 UI/UX ＋ AI 學習站"><link rel="icon" href="/uai-wiki-html/favicon.svg" type="image/svg+xml"><title>Figma MCP 實用指令清單｜筆記｜升職消化中</title><!-- 主題初始化：在畫面繪製前決定深淺色，避免閃爍 --><script>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+      })();
+    </script><link rel="stylesheet" href="/uai-wiki-html/_astro/_slug_.3ZshJw83.css">
+<style>.progress[data-astro-cid-mu6cnre2]{position:fixed;inset:0 0 auto;height:4px;z-index:60;background:transparent;pointer-events:none}#progress-bar[data-astro-cid-mu6cnre2]{display:block;height:100%;width:0%;background:var(--accent);transition:width .1s linear}
+.article-grid[data-astro-cid-5eggoaxc]{max-width:68rem;margin:0 auto;padding:0 1.5rem}.reading[data-astro-cid-5eggoaxc]{max-width:var(--font-reading-width);margin:0 auto}.back[data-astro-cid-5eggoaxc]{display:inline-block;margin-bottom:1.5rem;color:var(--muted);text-decoration:none;font-size:.9rem}.back[data-astro-cid-5eggoaxc]:hover{color:var(--accent)}.meta-top[data-astro-cid-5eggoaxc]{display:flex;flex-wrap:wrap;align-items:center;gap:.8rem;margin-bottom:.8rem}.date[data-astro-cid-5eggoaxc]{color:var(--muted);font-size:.88rem}.note-hint[data-astro-cid-5eggoaxc]{color:var(--muted);font-size:.92rem;border-left:2px solid var(--line);padding-left:.9rem;margin:0 0 2rem}.side-toc[data-astro-cid-5eggoaxc]{display:none}@media(min-width:1100px){.article-grid[data-astro-cid-5eggoaxc]{display:grid;grid-template-columns:13rem minmax(0,var(--font-reading-width));gap:4rem;justify-content:center;align-items:start}.reading[data-astro-cid-5eggoaxc]{margin:0}.side-toc[data-astro-cid-5eggoaxc]{display:block;position:sticky;top:6rem;padding-top:4.5rem}}.side-toc-title[data-astro-cid-5eggoaxc]{font-size:.78rem;letter-spacing:.1em;color:var(--muted);margin:0 0 .8rem}.side-toc[data-astro-cid-5eggoaxc] ol[data-astro-cid-5eggoaxc]{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}.side-toc[data-astro-cid-5eggoaxc] a[data-astro-cid-5eggoaxc]{display:block;padding:.45rem .9rem;margin-left:-2px;border-left:2px solid transparent;color:var(--muted);text-decoration:none;font-size:.88rem;line-height:1.45}.side-toc[data-astro-cid-5eggoaxc] a[data-astro-cid-5eggoaxc]:hover{color:var(--ink)}.side-toc[data-astro-cid-5eggoaxc] a[data-astro-cid-5eggoaxc].on{color:var(--ink);font-weight:600;border-left-color:var(--accent)}.prose[data-astro-cid-5eggoaxc]{margin-top:2.5rem}.prose[data-astro-cid-5eggoaxc] h2{scroll-margin-top:5rem;padding-top:1.5em;border-top:1px solid var(--line)}.prose[data-astro-cid-5eggoaxc] h2:first-child{border-top:none;padding-top:0;margin-top:0}.prose[data-astro-cid-5eggoaxc] strong{color:var(--ink);font-weight:700}.prose[data-astro-cid-5eggoaxc] img{max-width:100%;height:auto;border-radius:var(--radius)}.prose[data-astro-cid-5eggoaxc] blockquote{margin:1.8em 0;padding:1em 1.4em;border-left:3px solid var(--accent);color:var(--ink-soft);background:var(--bg-card);border-radius:0 8px 8px 0}.prose[data-astro-cid-5eggoaxc] blockquote p:last-child{margin-bottom:0}.prose[data-astro-cid-5eggoaxc] code{background:var(--bg-card);padding:.1em .4em;border-radius:5px;font-size:.9em}.prose[data-astro-cid-5eggoaxc] pre{padding:1rem 1.2rem;border-radius:var(--radius);overflow-x:auto;border:1px solid var(--line)}.prose[data-astro-cid-5eggoaxc] hr{border:none;border-top:1px solid var(--line);margin:3em 0}.prose[data-astro-cid-5eggoaxc] ul,.prose[data-astro-cid-5eggoaxc] ol{padding-left:1.4rem;margin:0 0 1.5em}.prose[data-astro-cid-5eggoaxc] li{margin:.6em 0}.prose[data-astro-cid-5eggoaxc] table{width:100%;border-collapse:collapse;margin:1.8em 0;font-size:.95rem;line-height:1.7;display:block;overflow-x:auto}.prose[data-astro-cid-5eggoaxc] th,.prose[data-astro-cid-5eggoaxc] td{padding:.7em 1em;text-align:left;border-bottom:1px solid var(--line)}.prose[data-astro-cid-5eggoaxc] th{font-size:.82rem;letter-spacing:.06em;color:var(--muted);font-weight:600;border-bottom-width:2px}.prose[data-astro-cid-5eggoaxc] tbody tr:nth-child(2n){background:var(--bg-card)}.prose[data-astro-cid-5eggoaxc] .dead-link{color:var(--muted);border-bottom:1px dotted var(--muted);cursor:help}.origin[data-astro-cid-5eggoaxc]{margin-top:4rem;padding-top:1.5rem;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}.origin[data-astro-cid-5eggoaxc] p[data-astro-cid-5eggoaxc]{margin:0 0 .4em}.origin[data-astro-cid-5eggoaxc] code[data-astro-cid-5eggoaxc]{background:var(--bg-card);padding:.15em .5em;border-radius:5px;font-size:.95em}
+</style></head> <body data-astro-cid-37fxchfa> <header class="site-header" data-astro-cid-3ef6ksr2> <div class="wrap bar" data-astro-cid-3ef6ksr2> <a href="/uai-wiki-html/" class="brand" data-astro-cid-3ef6ksr2> <span class="brand-mark" data-astro-cid-3ef6ksr2>升</span> <span class="brand-text" data-astro-cid-3ef6ksr2>升職消化中</span> </a> <nav class="nav" aria-label="主導覽" data-astro-cid-3ef6ksr2> <a href="/uai-wiki-html/articles" class="nav-item" data-astro-cid-3ef6ksr2> <span class="nav-text" data-astro-cid-3ef6ksr2>讀</span> </a><a href="/uai-wiki-html/glossary" class="nav-item on" aria-current="page" data-astro-cid-3ef6ksr2> <span class="nav-text" data-astro-cid-3ef6ksr2>查</span> </a><a href="/uai-wiki-html/resources" class="nav-item" data-astro-cid-3ef6ksr2> <span class="nav-text" data-astro-cid-3ef6ksr2>找</span> </a> <button id="theme-toggle" class="theme-toggle" type="button" aria-label="切換深淺色" data-astro-cid-x3pjskd3> <span class="i-sun" data-astro-cid-x3pjskd3>☀︎</span><span class="i-moon" data-astro-cid-x3pjskd3>☾</span> </button>  <script type="module">document.getElementById("theme-toggle")?.addEventListener("click",()=>{const t=document.documentElement,e=t.getAttribute("data-theme")==="dark"?"light":"dark";t.setAttribute("data-theme",e);try{localStorage.setItem("theme",e)}catch{}});</script> </nav> </div> </header>  <main data-astro-cid-37fxchfa>  <div class="progress" aria-hidden="true" data-astro-cid-mu6cnre2><span id="progress-bar" data-astro-cid-mu6cnre2></span></div>  <script type="module">const n=document.getElementById("progress-bar");function t(){const e=document.documentElement,o=e.scrollTop/(e.scrollHeight-e.clientHeight||1);n&&(n.style.width=Math.min(100,Math.max(0,o*100))+"%")}document.addEventListener("scroll",t,{passive:!0});window.addEventListener("resize",t);t();</script> <div class="article-grid" data-astro-cid-5eggoaxc> <nav class="side-toc" aria-label="章節導覽" data-astro-cid-5eggoaxc> <p class="side-toc-title" data-astro-cid-5eggoaxc>這篇的段落</p> <ol data-astro-cid-5eggoaxc><li data-astro-cid-5eggoaxc><a href="#-5-個指令依實用度排列" data-toc-link="-5-個指令依實用度排列" data-astro-cid-5eggoaxc>🌟 5 個指令（依實用度排列）</a></li><li data-astro-cid-5eggoaxc><a href="#-實務黃金組合" data-toc-link="-實務黃金組合" data-astro-cid-5eggoaxc>🚀 實務黃金組合</a></li><li data-astro-cid-5eggoaxc><a href="#-相關" data-toc-link="-相關" data-astro-cid-5eggoaxc>🔗 相關</a></li></ol> </nav> <article class="reading" data-astro-cid-5eggoaxc> <a href="/uai-wiki-html/notes" class="back" data-astro-cid-5eggoaxc>← 全部筆記</a> <div class="meta-top" data-astro-cid-5eggoaxc> <span class="tag" data-astro-cid-5eggoaxc>AI與Claude工具</span>  </div> <h1 data-astro-cid-5eggoaxc>Figma MCP 實用指令清單</h1>  <div class="prose" data-astro-cid-5eggoaxc> <blockquote>
+<p>一句話總結：<strong>Figma MCP＝讓 Claude「看得懂」你 Figma 設計稿的一組專屬指令。</strong> 選好節點，Claude 就能抓截圖、拿細節、讀變數，幫你轉成程式碼或說明。</p>
+</blockquote>
+<blockquote>
+<p>💡 聯想記憶法：MCP 想成「<strong>Claude 跟 Figma 之間的翻譯官</strong>」——你在 Figma 選好圖層，翻譯官就把畫面內容講給 Claude 聽。</p>
+</blockquote>
+<h2 id="-5-個指令依實用度排列">🌟 5 個指令（依實用度排列）</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>指令</th><th>白話功能</th><th>什麼時候用</th></tr></thead><tbody><tr><td><code>get_design_context</code></td><td>抓選取節點的<strong>完整設計脈絡</strong>（版面、元件、樣式、間距、文字）</td><td>想把設計轉成程式碼、或讓 Claude 理解你正在看的畫面（最常用）</td></tr><tr><td><code>get_screenshot</code></td><td>抓設計的<strong>視覺截圖</strong></td><td>要 Claude「看」設計長怎樣、比對視覺、描述畫面</td></tr><tr><td><code>get_variable_defs</code></td><td>抓<strong>設計變數 tokens</strong>（色票、字級、間距、圓角）</td><td>想同步設計系統變數、確認色碼字級</td></tr><tr><td><code>get_metadata</code></td><td>抓節點的<strong>結構化基本資料</strong>（層級、名稱、類型、座標尺寸）</td><td>只想快速看圖層結構，比 <code>get_design_context</code> 輕量</td></tr><tr><td><code>get_figjam</code></td><td>抓 <strong>FigJam 白板</strong>內容（便利貼、流程圖）</td><td>處理白板筆記、心智圖、流程規劃</td></tr></tbody></table>
+<h2 id="-實務黃金組合">🚀 實務黃金組合</h2>
+<blockquote>
+<p><strong><code>get_screenshot</code>（看樣子）＋ <code>get_design_context</code>（拿細節）＋ <code>get_variable_defs</code>（拿 tokens）</strong></p>
+<p>三個搭起來，就能把一個 Figma 畫面完整理解並轉成程式碼。</p>
+</blockquote>
+<h2 id="-相關">🔗 相關</h2>
+<ul>
+<li>Figma 插件本質是 MCP，可對照 <a href="/uai-wiki-html/notes/claude%E6%96%9C%E7%B7%9A%E6%8C%87%E4%BB%A4">Claude斜線指令</a> 裡的 <code>/mcp</code></li>
+</ul> </div> <!-- 筆記沒有外部出處，改標「這篇的本體在哪」——要改內容是去改學習庫，不是改網站 --> <footer class="origin" data-astro-cid-5eggoaxc> <p data-astro-cid-5eggoaxc>這是從學習庫同步過來的個人筆記。</p> <p class="path" data-astro-cid-5eggoaxc><code data-astro-cid-5eggoaxc>1_UIAI學習庫/知識庫/AI與Claude工具/Figma_MCP指令.md</code></p> </footer> </article> </div> <script type="module">const n=document.querySelectorAll("[data-toc-link]");if(n.length){const o=new Map;n.forEach(e=>{const t=document.getElementById(e.getAttribute("data-toc-link"));t&&o.set(t,e)});const c=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&(n.forEach(s=>s.classList.remove("on")),o.get(t.target)?.classList.add("on"))})},{rootMargin:"-10% 0px -80% 0px"});o.forEach((e,t)=>c.observe(t))}</script>   </main> <footer class="site-footer" data-astro-cid-37fxchfa> <div class="wrap" data-astro-cid-37fxchfa> <p data-astro-cid-37fxchfa>升職消化中 · 個人 UI/UX ＋ AI 學習庫。內容為學習消化用途，出處標於各文章底部。</p> </div> </footer>  </body> </html>
