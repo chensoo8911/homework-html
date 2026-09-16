@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>403 — 访问被拒绝</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+    body{
+	        text-align:center;padding:50px;margin:0;width:100vw;height:100vh;
+		    font-family:PingFang SC,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+		      }
+      .container{
+	          display:flex;width:100%;height:100%;flex-direction:column;align-items:center;justify-content:center;
+		    }
+        .cover img{
+		    display:block;max-width:400px;height:auto;margin:0 auto;
+		      }
+	  h1{color:#3a3a3a;font-size:28px}
+	    .label{
+		        display:inline-block;background-color:#fcefe7;border-radius:6px;color:#ff6000;
+			    padding:0 20px;font-size:16px;line-height:3em;margin-bottom:20px;
+			      }
+	      .ip-box{
+		          display:inline-block;background:#f9fafb;border-radius:8px;padding:12px 24px;
+			      margin-bottom:16px;font-size:14px;color:#667085;
+			        }
+	        .ip-box .ip{font-family:SF Mono,Menlo,monospace;color:#3a3a3a;font-weight:600;font-size:16px}
+		  .ip-box .loc{font-size:12px;color:#98a2b3;margin-top:2px}
+		    .contact{font-size:14px;color:#98a2b3}
+		      .contact b{color:#ff6000;font-weight:600}
+		        .dots{animation:dots 1.5s infinite}
+			  @keyframes dots{0%,20%{opacity:0}50%{opacity:1}100%{opacity:1}}
+</style>
+	</head>
+	<body>
+		<div class="container">
+			  <div class="cover"><img src="https://image.uisdc.com/wp-content/uploads/2025/03/Refresh-tips.png"></div>
+			    <h1>Wo! 客官您被拦下啦</h1>
+			      <p class="label">安全策略拦截 · 403</p>
+			        <div class="ip-box">
+					    <div>您的 IP：<span class="ip" id="uip">加载中<span class="dots">...</span></span></div>
+					        <div class="loc" id="uloc"></div>
+						  </div>
+						    <p class="contact">若为正常访问误报，请联系<br>微信：<b>uisdc5687</b></p>
+		</div>
+	<script>
+		fetch('https://ip.uisdc.com/json/')
+  .then(function(r){return r.json()})
+  .then(function(d){
+	      var o=d.data;
+	      document.getElementById('uip').textContent=o.ip;
+	      document.getElementById('uloc').textContent=o.cname+(o.isp?' · '+o.isp:'');
+	    })
+  .catch(function(){
+	      document.getElementById('uip').textContent='获取失败';
+	    });
+	</script>
+	</body>
+</html>
