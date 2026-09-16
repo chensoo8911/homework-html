@@ -1,8 +1,8 @@
-# 升職消化中
+# 回家作業
 
 一個給自己用的 UI/UX ＋ AI 學習站。把設計系統、UX 法則、產品思維與 AI 工具，消化成讀得完、查得到、找得著的一個地方。
 
-🔗 **<https://chensoo8911.github.io/uai-wiki-html/>**
+🔗 **<https://chensoo8911.github.io/homework-html/>**
 
 ## 三個分區
 

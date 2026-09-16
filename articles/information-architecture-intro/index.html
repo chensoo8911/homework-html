@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang="zh-Hant" data-astro-cid-37fxchfa> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="一個給自己用的 UI/UX ＋ AI 學習站"><link rel="icon" href="/uai-wiki-html/favicon.svg" type="image/svg+xml"><title>資訊架構學入門：讓人找得到、看得懂的 5 個系統｜升職消化中</title><!-- 主題初始化：在畫面繪製前決定深淺色，避免閃爍 --><script>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+      })();
+    </script><link rel="stylesheet" href="/uai-wiki-html/_astro/_slug_.DPeYHvKI.css">
+<style>.progress[data-astro-cid-mu6cnre2]{position:fixed;inset:0 0 auto;height:4px;z-index:60;background:transparent;pointer-events:none}#progress-bar[data-astro-cid-mu6cnre2]{display:block;height:100%;width:0%;background:var(--accent);transition:width .1s linear}
+</style>
+<link rel="stylesheet" href="/uai-wiki-html/_astro/_slug_.DmvNEfVi.css"></head> <body data-astro-cid-37fxchfa> <header class="site-header" data-astro-cid-3ef6ksr2> <div class="wrap bar" data-astro-cid-3ef6ksr2> <a href="/uai-wiki-html/" class="brand" data-astro-cid-3ef6ksr2> <span class="brand-mark" data-astro-cid-3ef6ksr2>升</span> <span class="brand-text" data-astro-cid-3ef6ksr2>升職消化中</span> </a> <nav class="nav" aria-label="主導覽" data-astro-cid-3ef6ksr2> <a href="/uai-wiki-html/articles" class="nav-item on" aria-current="page" data-astro-cid-3ef6ksr2> <span class="nav-text" data-astro-cid-3ef6ksr2>讀</span> </a><a href="/uai-wiki-html/glossary" class="nav-item" data-astro-cid-3ef6ksr2> <span class="nav-text" data-astro-cid-3ef6ksr2>查</span> </a><a href="/uai-wiki-html/resources" class="nav-item" data-astro-cid-3ef6ksr2> <span class="nav-text" data-astro-cid-3ef6ksr2>找</span> </a> <button id="theme-toggle" class="theme-toggle" type="button" aria-label="切換深淺色" data-astro-cid-x3pjskd3> <span class="i-sun" data-astro-cid-x3pjskd3>☀︎</span><span class="i-moon" data-astro-cid-x3pjskd3>☾</span> </button>  <script type="module">document.getElementById("theme-toggle")?.addEventListener("click",()=>{const t=document.documentElement,e=t.getAttribute("data-theme")==="dark"?"light":"dark";t.setAttribute("data-theme",e);try{localStorage.setItem("theme",e)}catch{}});</script> </nav> </div> </header>  <main data-astro-cid-37fxchfa>  <div class="progress" aria-hidden="true" data-astro-cid-mu6cnre2><span id="progress-bar" data-astro-cid-mu6cnre2></span></div>  <script type="module">const n=document.getElementById("progress-bar");function t(){const e=document.documentElement,o=e.scrollTop/(e.scrollHeight-e.clientHeight||1);n&&(n.style.width=Math.min(100,Math.max(0,o*100))+"%")}document.addEventListener("scroll",t,{passive:!0});window.addEventListener("resize",t);t();</script> <div class="article-grid" data-astro-cid-zm77yjld> <!-- 桌機側邊章節導覽：捲到哪一段就亮哪一條。
+         長文捲到一半最怕「不知道自己在哪、還剩多少」——這是站層級的定位感。 --> <nav class="side-toc" aria-label="章節導覽" data-astro-cid-zm77yjld> <p class="side-toc-title" data-astro-cid-zm77yjld>這篇的段落</p> <ol data-astro-cid-zm77yjld> <li data-astro-cid-zm77yjld><a href="#資訊架構在解決什麼問題" data-toc-link="資訊架構在解決什麼問題" data-astro-cid-zm77yjld>資訊架構在解決什麼問題</a></li><li data-astro-cid-zm77yjld><a href="#5-個系統" data-toc-link="5-個系統" data-astro-cid-zm77yjld>5 個系統</a></li><li data-astro-cid-zm77yjld><a href="#一個好記的比喻" data-toc-link="一個好記的比喻" data-astro-cid-zm77yjld>一個好記的比喻</a></li><li data-astro-cid-zm77yjld><a href="#可以拿來檢查自己專案的問題" data-toc-link="可以拿來檢查自己專案的問題" data-astro-cid-zm77yjld>可以拿來檢查自己專案的問題</a></li> </ol> </nav> <article class="reading" data-astro-cid-zm77yjld> <a href="/uai-wiki-html/articles" class="back" data-astro-cid-zm77yjld>← 全部文章</a> <div class="meta-top" data-astro-cid-zm77yjld> <span class="tag" style="background: color-mix(in srgb, var(--c3) 16%, transparent); border-color: var(--c3);" data-astro-cid-zm77yjld> 資訊架構 </span> <span class="reading-time" data-astro-cid-zm77yjld>約 5 分鐘 · 更新 2026-09-16</span> </div> <h1 data-astro-cid-zm77yjld>資訊架構學入門：讓人找得到、看得懂的 5 個系統</h1> <!-- TL;DR 先行：ADHD 友善，讓人先抓到重點再決定要不要細讀。
+           它是這頁的第二主角，所以視覺重量刻意比章節清單重。 --> <aside class="tldr" aria-label="重點摘要" data-astro-cid-zm77yjld> <p class="tldr-title" data-astro-cid-zm77yjld>先抓重點</p> <ul data-astro-cid-zm77yjld><li data-astro-cid-zm77yjld>資訊架構不是畫 Sitemap，是讓使用者在複雜的網站／App 裡找得到資訊、看得懂內容、知道自己在哪。</li><li data-astro-cid-zm77yjld>5 個核心系統：分類（Organization）、命名（Labeling）、導覽（Navigation）、搜尋（Search）、Metadata／Taxonomy。</li><li data-astro-cid-zm77yjld>本篇是《資訊架構學》第四版的資源導讀，不是逐章書摘——深入章節內容還在等書頁核對，目前只涵蓋第 7、8、9 章對應的概念。</li></ul> </aside> <!-- 窄螢幕沒有側欄，章節清單改收在這裡（預設收合，不佔開頭版面） --> <details class="toc-inline" data-astro-cid-zm77yjld> <summary data-astro-cid-zm77yjld>這篇有 4 個段落</summary> <ol data-astro-cid-zm77yjld><li data-astro-cid-zm77yjld><a href="#資訊架構在解決什麼問題" data-astro-cid-zm77yjld>資訊架構在解決什麼問題</a></li><li data-astro-cid-zm77yjld><a href="#5-個系統" data-astro-cid-zm77yjld>5 個系統</a></li><li data-astro-cid-zm77yjld><a href="#一個好記的比喻" data-astro-cid-zm77yjld>一個好記的比喻</a></li><li data-astro-cid-zm77yjld><a href="#可以拿來檢查自己專案的問題" data-astro-cid-zm77yjld>可以拿來檢查自己專案的問題</a></li></ol> </details> <div class="prose" data-astro-cid-zm77yjld>  <h2 id="資訊架構在解決什麼問題">資訊架構在解決什麼問題</h2>
+<p><strong>資訊架構（Information Architecture, IA）不是「畫一張 Sitemap」這麼簡單。</strong> 它處理的是：使用者在複雜的網站、App，或跨裝置的環境裡，能不能</p>
+<ul>
+<li><strong>找得到</strong>想要的資訊</li>
+<li><strong>看得懂</strong>內容在講什麼</li>
+<li><strong>知道自己現在在哪</strong>、還能往哪走</li>
+</ul>
+<p>《資訊架構學》第四版把這件事拆成 5 個可以分別檢查的系統。這篇先介紹跟「組織、命名、導覽」直接相關的部分（對應書裡第 7、8、9 章的主題），其餘章節（例如第 5 章談的「怎麼把 IA 拆解成可分析的元件」）之後會補上。</p>
+<h2 id="5-個系統">5 個系統</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>系統</th><th>要解決的問題</th></tr></thead><tbody><tr><td><strong>Organization 分類</strong></td><td>內容依什麼邏輯分組？類別互斥、容易預測嗎？</td></tr><tr><td><strong>Labeling 命名</strong></td><td>選單、分類、按鈕的文字，符合使用者的語言嗎？（不是設計團隊內部的行話）</td></tr><tr><td><strong>Navigation 導覽</strong></td><td>使用者知道自己在哪、還能去哪嗎？</td></tr><tr><td><strong>Search 搜尋</strong></td><td>查詢、篩選、排序、搜尋結果，撐得起使用者「找東西」的行為嗎？</td></tr><tr><td><strong>Metadata／Taxonomy</strong></td><td>內容需要哪些欄位、標籤、分類階層？</td></tr></tbody></table>
+<h3 id="分類organization">分類（Organization）</h3>
+<p>分類邏輯是不是使用者一看就懂、猜得到？常見的錯誤是照「公司內部部門」分類，而不是照「使用者想找什麼」分類——這兩者常常對不上。</p>
+<h3 id="命名labeling">命名（Labeling）</h3>
+<p>同一件事，設計團隊、工程團隊、使用者可能有三種不同的叫法。命名體系要做的，就是統一成<strong>使用者看得懂的那一種</strong>，而且全站要一致——同一個東西不能這裡叫「收藏」那裡叫「珍藏」。</p>
+<h3 id="導覽navigation">導覽（Navigation）</h3>
+<p>好的導覽要隨時回答兩個問題：<strong>我在哪？</strong> <strong>我還能去哪？</strong> 麵包屑、目前頁面的高亮狀態、清楚的返回路徑，都是在回答這兩題。</p>
+<h2 id="一個好記的比喻">一個好記的比喻</h2>
+<p>UX Magazine 的原作者節錄用「場所營造」比喻數位環境——資訊架構做的事，跟建築師規劃一棟大樓的動線很像：不是把房間蓋出來就好，是要讓人一進門就知道廁所在哪、電梯在哪、自己站在幾樓。</p>
+<h2 id="可以拿來檢查自己專案的問題">可以拿來檢查自己專案的問題</h2>
+<p>下次商品分類或選單越做越亂的時候，照這個順序自問：</p>
+<ol>
+<li>分類邏輯清不清楚？</li>
+<li>命名一不一致？</li>
+<li>導覽層級會不會太深？</li>
+<li>搜尋／篩選夠不夠用？</li>
+</ol>
+<hr>
+<p><em>這是「資訊架構」主題的文章之一。目前是資源導讀＋部分概念整理，不是《資訊架構學》全書逐章摘要——第 5 章（拆解架構）等其餘深入內容，需要書頁截圖核對後才會補齊，屆時會更新本篇並拿掉「draft」標記。</em></p>  </div> <!-- 出處：每篇必標 --> <footer class="sources" data-astro-cid-zm77yjld> <p class="sources-title" data-astro-cid-zm77yjld>出處</p> <ul data-astro-cid-zm77yjld> <li data-astro-cid-zm77yjld> <span class="src-note" data-astro-cid-zm77yjld>摘要自文章（原書第四版作者 Louis Rosenfeld／Peter Morville／Jorge Arango 親自撰寫的節錄）</span> <a href="https://uxmag.com/" target="_blank" rel="noopener noreferrer" data-astro-cid-zm77yjld>Information Architecture: Design for Understanding — UX Magazine</a> </li><li data-astro-cid-zm77yjld> <span class="src-note" data-astro-cid-zm77yjld>摘要自官方目錄與部分預覽</span> <a href="https://www.oreilly.com/" target="_blank" rel="noopener noreferrer" data-astro-cid-zm77yjld>Information Architecture, 4th Edition — O&#39;Reilly 官方書頁</a> </li> </ul> </footer> </article> </div> <script type="module">const n=document.querySelectorAll("[data-toc-link]");if(n.length){const o=new Map;n.forEach(e=>{const t=document.getElementById(e.getAttribute("data-toc-link"));t&&o.set(t,e)});const c=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&(n.forEach(s=>s.classList.remove("on")),o.get(t.target)?.classList.add("on"))})},{rootMargin:"-10% 0px -80% 0px"});o.forEach((e,t)=>c.observe(t))}</script>   </main> <footer class="site-footer" data-astro-cid-37fxchfa> <div class="wrap" data-astro-cid-37fxchfa> <p data-astro-cid-37fxchfa>升職消化中 · 個人 UI/UX ＋ AI 學習庫。內容為學習消化用途，出處標於各文章底部。</p> </div> </footer>  </body> </html>

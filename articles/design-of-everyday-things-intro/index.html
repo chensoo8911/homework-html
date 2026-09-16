@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="zh-Hant" data-astro-cid-37fxchfa> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="一個給自己用的 UI/UX ＋ AI 學習站"><link rel="icon" href="/uai-wiki-html/favicon.svg" type="image/svg+xml"><title>設計的心理學：為什麼使用者「看不懂」不是他的錯｜升職消化中</title><!-- 主題初始化：在畫面繪製前決定深淺色，避免閃爍 --><script>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+      })();
+    </script><link rel="stylesheet" href="/uai-wiki-html/_astro/_slug_.DPeYHvKI.css">
+<style>.progress[data-astro-cid-mu6cnre2]{position:fixed;inset:0 0 auto;height:4px;z-index:60;background:transparent;pointer-events:none}#progress-bar[data-astro-cid-mu6cnre2]{display:block;height:100%;width:0%;background:var(--accent);transition:width .1s linear}
+</style>
+<link rel="stylesheet" href="/uai-wiki-html/_astro/_slug_.DmvNEfVi.css"></head> <body data-astro-cid-37fxchfa> <header class="site-header" data-astro-cid-3ef6ksr2> <div class="wrap bar" data-astro-cid-3ef6ksr2> <a href="/uai-wiki-html/" class="brand" data-astro-cid-3ef6ksr2> <span class="brand-mark" data-astro-cid-3ef6ksr2>升</span> <span class="brand-text" data-astro-cid-3ef6ksr2>升職消化中</span> </a> <nav class="nav" aria-label="主導覽" data-astro-cid-3ef6ksr2> <a href="/uai-wiki-html/articles" class="nav-item on" aria-current="page" data-astro-cid-3ef6ksr2> <span class="nav-text" data-astro-cid-3ef6ksr2>讀</span> </a><a href="/uai-wiki-html/glossary" class="nav-item" data-astro-cid-3ef6ksr2> <span class="nav-text" data-astro-cid-3ef6ksr2>查</span> </a><a href="/uai-wiki-html/resources" class="nav-item" data-astro-cid-3ef6ksr2> <span class="nav-text" data-astro-cid-3ef6ksr2>找</span> </a> <button id="theme-toggle" class="theme-toggle" type="button" aria-label="切換深淺色" data-astro-cid-x3pjskd3> <span class="i-sun" data-astro-cid-x3pjskd3>☀︎</span><span class="i-moon" data-astro-cid-x3pjskd3>☾</span> </button>  <script type="module">document.getElementById("theme-toggle")?.addEventListener("click",()=>{const t=document.documentElement,e=t.getAttribute("data-theme")==="dark"?"light":"dark";t.setAttribute("data-theme",e);try{localStorage.setItem("theme",e)}catch{}});</script> </nav> </div> </header>  <main data-astro-cid-37fxchfa>  <div class="progress" aria-hidden="true" data-astro-cid-mu6cnre2><span id="progress-bar" data-astro-cid-mu6cnre2></span></div>  <script type="module">const n=document.getElementById("progress-bar");function t(){const e=document.documentElement,o=e.scrollTop/(e.scrollHeight-e.clientHeight||1);n&&(n.style.width=Math.min(100,Math.max(0,o*100))+"%")}document.addEventListener("scroll",t,{passive:!0});window.addEventListener("resize",t);t();</script> <div class="article-grid" data-astro-cid-zm77yjld> <!-- 桌機側邊章節導覽：捲到哪一段就亮哪一條。
+         長文捲到一半最怕「不知道自己在哪、還剩多少」——這是站層級的定位感。 --> <nav class="side-toc" aria-label="章節導覽" data-astro-cid-zm77yjld> <p class="side-toc-title" data-astro-cid-zm77yjld>這篇的段落</p> <ol data-astro-cid-zm77yjld> <li data-astro-cid-zm77yjld><a href="#一句話" data-toc-link="一句話" data-astro-cid-zm77yjld>一句話</a></li><li data-astro-cid-zm77yjld><a href="#4-個最常用得到的概念" data-toc-link="4-個最常用得到的概念" data-astro-cid-zm77yjld>4 個最常用得到的概念</a></li><li data-astro-cid-zm77yjld><a href="#拿來檢查自己的設計" data-toc-link="拿來檢查自己的設計" data-astro-cid-zm77yjld>拿來檢查自己的設計</a></li> </ol> </nav> <article class="reading" data-astro-cid-zm77yjld> <a href="/uai-wiki-html/articles" class="back" data-astro-cid-zm77yjld>← 全部文章</a> <div class="meta-top" data-astro-cid-zm77yjld> <span class="tag" style="background: color-mix(in srgb, var(--c4) 16%, transparent); border-color: var(--c4);" data-astro-cid-zm77yjld> 產品思維與品味 </span> <span class="reading-time" data-astro-cid-zm77yjld>約 5 分鐘 · 更新 2026-09-16</span> </div> <h1 data-astro-cid-zm77yjld>設計的心理學：為什麼使用者「看不懂」不是他的錯</h1> <!-- TL;DR 先行：ADHD 友善，讓人先抓到重點再決定要不要細讀。
+           它是這頁的第二主角，所以視覺重量刻意比章節清單重。 --> <aside class="tldr" aria-label="重點摘要" data-astro-cid-zm77yjld> <p class="tldr-title" data-astro-cid-zm77yjld>先抓重點</p> <ul data-astro-cid-zm77yjld><li data-astro-cid-zm77yjld>好設計不是使用者笨，是東西沒把該給的線索給夠——用示意符號、對應關係、回饋，讓人一看就懂怎麼操作。</li><li data-astro-cid-zm77yjld>錯誤預防的重點是從源頭降低犯錯機率，不是等使用者錯了才提示。</li><li data-astro-cid-zm77yjld>本篇是《設計的心理學》的資源導讀，對應書裡第 4 章的概念最完整；第 2、6 章（行動心理學、雙菱形設計思維）還在等書頁核對。</li></ul> </aside> <!-- 窄螢幕沒有側欄，章節清單改收在這裡（預設收合，不佔開頭版面） --> <details class="toc-inline" data-astro-cid-zm77yjld> <summary data-astro-cid-zm77yjld>這篇有 3 個段落</summary> <ol data-astro-cid-zm77yjld><li data-astro-cid-zm77yjld><a href="#一句話" data-astro-cid-zm77yjld>一句話</a></li><li data-astro-cid-zm77yjld><a href="#4-個最常用得到的概念" data-astro-cid-zm77yjld>4 個最常用得到的概念</a></li><li data-astro-cid-zm77yjld><a href="#拿來檢查自己的設計" data-astro-cid-zm77yjld>拿來檢查自己的設計</a></li></ol> </details> <div class="prose" data-astro-cid-zm77yjld>  <h2 id="一句話">一句話</h2>
+<p><strong>Don Norman 在《設計的心理學》裡把「使用者用不好一個東西」拆成可以分析的設計問題</strong>：使用者是不是看得出可以做什麼、操作跟結果對不對得起來、系統有沒有給出清楚回饋。這本書問的不是「使用者夠不夠聰明」，是「東西有沒有把線索給夠」。</p>
+<h2 id="4-個最常用得到的概念">4 個最常用得到的概念</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>概念</th><th>白話意思</th></tr></thead><tbody><tr><td><strong>Signifier 示意符號</strong></td><td>讓人一眼看出「這裡可以操作、該怎麼操作」</td></tr><tr><td><strong>Mapping 對應關係</strong></td><td>控制方式跟結果要有直覺關係（例如開關位置對應到它控制的燈）</td></tr><tr><td><strong>Feedback 回饋</strong></td><td>使用者做了動作，系統要快速、明確地回應</td></tr><tr><td><strong>錯誤預防</strong></td><td>好設計不只是「提示你錯了」，是<strong>從源頭降低犯錯的機率</strong></td></tr></tbody></table>
+<h3 id="signifier不是好不好看是看不看得懂">Signifier：不是「好不好看」，是「看不看得懂」</h3>
+<p>按鈕做得再漂亮，如果使用者不知道它可以按、按下去會發生什麼事，就是失敗的示意符號。常見的例子：一個看起來像純文字標題的東西其實可以點——這就是示意符號沒做好。</p>
+<h3 id="mapping操作跟結果要對得起來">Mapping：操作跟結果要對得起來</h3>
+<p>最直覺的例子是瓦斯爐的四個爐頭跟四個旋鈕——如果旋鈕的排列跟爐頭對不上，使用者每次都要用猜的。介面設計也是同樣道理：篩選條件的排列順序，最好跟結果呈現的順序一致。</p>
+<h3 id="feedback不能悶不吭聲">Feedback：不能悶不吭聲</h3>
+<p>使用者按下一個按鈕後，畫面要在很短時間內給出回應（哪怕只是一個 loading 狀態），不能讓人懷疑「我是不是按到了」。</p>
+<h3 id="錯誤預防防呆比提示更重要">錯誤預防：防呆比提示更重要</h3>
+<p>與其等使用者填錯表單再跳出紅字，不如一開始就用格式限制、選單代替輸入框，讓錯誤根本發生不了。</p>
+<h2 id="拿來檢查自己的設計">拿來檢查自己的設計</h2>
+<p>下次「使用者看不懂按鈕或操作結果」時，照這個順序自問：</p>
+<ol>
+<li>有沒有清楚的示意符號？</li>
+<li>操作跟結果對不對得起來？</li>
+<li>回饋夠不夠快、夠不夠明確？</li>
+<li>有沒有辦法從源頭防呆，而不是事後提示？</li>
+</ol>
+<hr>
+<p><em>這是「產品思維與品味」主題的文章之一。目前是資源導讀，對應書裡第 4 章（局限、可發現性與回饋）概念最完整；第 2 章（日常行動的心理學／七階段行動模型）與第 6 章（設計思維／雙菱形模型）需要書頁截圖核對後補齊，屆時會更新本篇並拿掉「draft」標記。</em></p>  </div> <!-- 出處：每篇必標 --> <footer class="sources" data-astro-cid-zm77yjld> <p class="sources-title" data-astro-cid-zm77yjld>出處</p> <ul data-astro-cid-zm77yjld> <li data-astro-cid-zm77yjld> <span class="src-note" data-astro-cid-zm77yjld>摘要自作者訪談影片</span> <a href="https://www.nngroup.com/" target="_blank" rel="noopener noreferrer" data-astro-cid-zm77yjld>Don Norman 本人解說 — Nielsen Norman Group</a> </li><li data-astro-cid-zm77yjld> <span class="src-note" data-astro-cid-zm77yjld>摘要自文章</span> <a href="https://www.allencheng.com/" target="_blank" rel="noopener noreferrer" data-astro-cid-zm77yjld>The Design of Everyday Things — Book Summary &amp; Videos</a> </li> </ul> </footer> </article> </div> <script type="module">const n=document.querySelectorAll("[data-toc-link]");if(n.length){const o=new Map;n.forEach(e=>{const t=document.getElementById(e.getAttribute("data-toc-link"));t&&o.set(t,e)});const c=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&(n.forEach(s=>s.classList.remove("on")),o.get(t.target)?.classList.add("on"))})},{rootMargin:"-10% 0px -80% 0px"});o.forEach((e,t)=>c.observe(t))}</script>   </main> <footer class="site-footer" data-astro-cid-37fxchfa> <div class="wrap" data-astro-cid-37fxchfa> <p data-astro-cid-37fxchfa>升職消化中 · 個人 UI/UX ＋ AI 學習庫。內容為學習消化用途，出處標於各文章底部。</p> </div> </footer>  </body> </html>
